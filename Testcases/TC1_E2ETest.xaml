@@ -1,0 +1,763 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1244,11426" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Testing</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="546,12595" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Username" />
+      <Variable x:TypeArguments="x:String" Name="Password" />
+      <Variable x:TypeArguments="x:String" Name="RandomValue" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[RandomValue]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[Right(Now.Millisecond.ToString,2)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[Username]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">["e2e5"+ RandomValue +"@yopmail.com"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[Password]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">123456</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: nopCommerce demo store" sap:VirtualizedContainerService.HintSize="484,12118" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,11901" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="result_message" />
+              <Variable x:TypeArguments="x:String" Name="ProductPrice" />
+              <Variable x:TypeArguments="x:String" Name="Url" />
+              <Variable x:TypeArguments="x:String" Name="prodPrice" />
+              <Variable x:TypeArguments="x:String" Name="addCartMessage" />
+              <Variable x:TypeArguments="x:String" Name="CheckoutUrl" />
+              <Variable x:TypeArguments="x:String" Name="ProductOrderMessage" />
+              <Variable x:TypeArguments="x:String" Name="OrderHeader" />
+              <Variable x:TypeArguments="x:String" Name="OrderStatus" />
+              <Variable x:TypeArguments="x:String" Name="RegisterUrl" />
+              <Variable x:TypeArguments="x:String" Name="LoginHeaderText" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Comment sap:VirtualizedContainerService.HintSize="388,56" sap2010:WorkflowViewState.IdRef="Comment_2" Text="Register an account" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/" CvTextArgument="Register" CvType="Text" DesignTimeRectangle="1195, 79, 45, 45" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Register'" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='ico-register' aaname='Register' check:innerText='Register' /&gt;" Guid="8e87137f-6beb-4540-bf4f-49bfdf736ced" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGOSURBVGhD7ZRhzoMgDEC9NZfQU+gx9BTu3+YBtkv0s1CgILp8Zppq+hKy4Tra17JVcAOq52uCq697TIJeL41KSEElpKASUlAJKaiEFFRCCiohhZtJfAZojAGTr26kgJ08WjD1AG/alhg7A02/FbFNJtHA8KG9ZYR2FmkftD2IgyXyBG8Y6jilRA477p93rPt8EizGmHZu0Xxi34RnIQ+PC1N0uZvaxfPc/5oECoXrZRP5eB5HogsJjInnY/G+6KRRSR10ls3J36d8/U3EKeRXyx1q97zbCN+vSHC4hJ1M8SyaRKgnsj4J/DKN3OEkSpLribP3vFEsfiHBzncL62BNy9i8Tvb6hGTrnUwKRdYkGLZYuhoLieI/4k4J333/RSvlE1BX3Wc8ju5uLmHj42SxWF84l8jriI3cLUGdCcmpQBpzSIxgsfb5fEZfnkRyVfzn7Hk4L5yFK829LfFDkomdwG8k6GqVunwGh0zibFRCCiohBZWQgkpIQSWkoBJSUAkpqIQUqmma4OrrBpMA+APFLE1bA3RCWAAAAABJRU5ErkJggg==" InformativeScreenshot="f42ee6a62900fb390cb346b8267a7703.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetUrl CurrentUrl="[RegisterUrl]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="388,87" sap2010:WorkflowViewState.IdRef="NGetUrl_2" Version="V3" />
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[RegisterUrl.Contains(&quot;register&quot;)]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_5" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'unchecked'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/register?returnUrl=%2F" DesignTimeRectangle="760, 556, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FriendlyName="'INPUT gender-male'" FullSelectorArgument="&lt;webctrl id='gender-male' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gender-male' tag='INPUT' type='radio' class='' aaname='Male' /&gt;" Guid="e09a2085-ee6c-41e6-aec6-2345562aec78" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACpSURBVDhPtZNBDsMgDAT7au48gE8gceMlnPkIR05bTSSiFLdqmtCVVshmWWyTPHrvusv/mdRaFWOU917OuW0lJv9Ob0xyzgohqJSi1poAKzF59uczLyYIUkrbwU9gfzbaTSiVm84A3bG13YSeKfkM0KE3JgxvzOAb0KE3JrzCL0BvTJZUsmQmS14H3v5OBhFwEyWPGbESk58NoDGBlErPDO/Sv3OFC0y6nvdyOaUz0/SiAAAAAElFTkSuQmCC" InformativeScreenshot="7d6d85b26ecd010572ccfa04bfe7a288.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Male" CvType="Text" DesignTimeRectangle="778, 554, 30, 16" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl parentid='gender' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='gender' tag='LABEL' type='' class='forcheckbox' aaname='Male' check:innerText='Male' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAUCAYAAADoZO9yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEQSURBVEhL7ZO7GcMgDIQzHONoFzOI2cOfx2ALVwriZUkIp0tSUFyBJY5fB35d14X/oAWitUC0OkjcAZ3zeLIi16e61IneOfSHVbMlQQAQIGBkDVmHTxDumyABwwYYomw6t2S6EQwHiRiA4G7BHmtNg6heY9gBJKbpb0MSmSaAnEoDqcbb2fvK1bUhOEjp5Z40GN9LGkHIhBMTAG0SIIZiQLBAaN+QANVl8gYIEd9N+VqaoQGSp2uRGyAlKd6je4tMkJ5CNqyHK5AO0PZMEhG+D7JBGkAHSt8EyBjt49UYSWpNQO6Jsxl9G0BYra6fHqt4nAbcFGRoNtf1ejJAObz8HTPQpjGhDvJrLRCtBSJ14RsfQI4kRxm/jQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'First name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="Johnnix" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/register?returnUrl=%2F" CvType="InputBox" DesignTimeRectangle="760, 593, 400, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT FirstName'" FullSelectorArgument="&lt;webctrl id='FirstName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='FirstName' tag='INPUT' type='text' class='' aaname='First name:' /&gt;" Guid="f5b72b74-b845-4434-9b9e-656f72daee19" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAAsCAYAAABCK04MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADOSURBVHhe7dWxDYAwAMAw/v+xh3QqGwswVM1oS7kh15xzSZJ0mqFIkpKeoYwxJEna7nMoALDDUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgIShAJAwFAAShgJAwlAASBgKAAlDASBhKAAkDAWAhKEAkDAUABKGAkDCUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgMTvUCRJ2u01FEmSTjIUSVLQXDfqd+BnuMxXZAAAAABJRU5ErkJggg==" InformativeScreenshot="5f726789a35cb2223452cefbedd78fd1.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="First name:" CvType="Text" DesignTimeRectangle="375, 605, 375, 16" ElementType="Text" FriendlyName="'First name'" FullSelectorArgument="&lt;webctrl aaname='First name:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='First name:' tag='LABEL' type='' class='' check:innerText='First name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAUCAYAAABs650wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHKSURBVHhe7dpBdoMgFEDRLs7lsJe4EN1HjstwF46oQAn/IzVWHaTwBvecJALayROTfi3LYgEAdSP2ANAAYg8ADSD2ANAAYg8ADSD2AOrw7G3XdUVmmNcxk+3X1/2zMPctN9fYcS4d+x+IPYA6uNib0c6lY5cRewD4DG9jr3f202N9PYzW+N1/CLn7LD0R9HYS8+LnpSeDeTC2e4x2NGlceJqIY2Z1LD/uzmuGSYzZXo9eT19T95jSMf+EE689IfYA6nAi9jKKPthivn6/v7P3Y8XaIbhx/E/oRZDD+LReuJb8vQi8Crj+O+L6+mawRewB1MEHMURSeUW2EPs8wL/eLA7EXs3Ng5yZ3RNFFvfd3Xk6vz+XHOv49ba7eYnYA6jDmZ29imY4Hm4SedjviX3csefnKMZ+s14Yr9eQiD2AFlyOfSS/X5dfnZyP/SvQccyRnf1e7IvXvY/YA6jDbbGP5PgrsS/MvRD77bmOIfYA6nAx9puIuvVu2dnr88b3Z7/GifPlD7JHbgDEHkAdLu/s83+P1HH347PIRvuxX/kbh1xXB/tvsV/5J4O43kqOVTephNgDQAOIPQA0gNgDQAOIPQA0gNgDQPUW+w2gqGLQzrPrhwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Last name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="Account" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/register?returnUrl=%2F" CvType="InputBox" DesignTimeRectangle="760, 621, 400, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT LastName'" FullSelectorArgument="&lt;webctrl id='LastName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='LastName' tag='INPUT' type='text' class='' aaname='Last name:' /&gt;" Guid="42379789-b91d-4560-8998-eb972f1f64e8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAAsCAYAAABCK04MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADOSURBVHhe7dWxDYAwAMAw/v+xh3QqGwswVM1oS7kh15xzSZJ0mqFIkpKeoYwxJEna7nMoALDDUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgIShAJAwFAAShgJAwlAASBgKAAlDASBhKAAkDAWAhKEAkDAUABKGAkDCUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgMTvUCRJ2u01FEmSTjIUSVLQXDfqd+BnuMxXZAAAAABJRU5ErkJggg==" InformativeScreenshot="217be7252bdd9b76f6d681bdd61bcad7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Last name:" CvType="Text" DesignTimeRectangle="375, 633, 375, 16" ElementType="Text" FriendlyName="'Last name'" FullSelectorArgument="&lt;webctrl aaname='Last name:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Last name:' tag='LABEL' type='' class='' check:innerText='Last name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAUCAYAAABs650wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHaSURBVHhe7drBkYMgFIDhLc5y6CUWEvvIWIZdeGIVRN4DJW7MZeE/fDOrIprLr8P6M8+zBQDUjdgDQAOIPQA0gNgDQAOIPQA0gNgDqMb0NLZ7jIfH7hlt3xk7TEfH/gdiD6AaxP4csQdQjbexnwZrus52Ox3w8SGP9XZ0+9fQx/39K44P/HUHO5g4zjwnMWZSx9Lj63XNcxRj/H3J+9Hz6XtSv/nVL/vCvUfEHkA1irHfQh9jvQXYDHZatt2529/rcb1dfrN3Y+XcLrhh/HYdcV9+fJzPRz3dFoFXAfehT3+HfhjkiD2AahRjf0AGXcc9dSH26tw0yAn34EniXnw7j9c//I1uvvxtXiL2AKpxLfY+xPsSiHp7D/vTsH8n9nJZJnuTT2OfzefH6zkkYg+gEeXYx5iHJY880iu5vi6XTj6P/R7oMObKm30p9m8faDliD6AaxdhnAT2LfSCDfSf2B+feiH35ns8RewDVeBt7udThtuPbdhZRNf5u7OWSjt/+dBknnC//IXvlAUDsAVTDRc+FNLGFdF9OWa1xdEEPEU0/j9RxD+ceffVSjv0iPFj2eXWw/xb7xfZl0T6nHKseUhGxB4AGEHsAaACxB4AGEHsAaACxB4DqzfYXqqBoTeS0ImYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NSelectItem DisplayName="Select Item 'Date of birth'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="23" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="32">
+                  <x:String>Day</x:String>
+                  <x:String>1</x:String>
+                  <x:String>2</x:String>
+                  <x:String>3</x:String>
+                  <x:String>4</x:String>
+                  <x:String>5</x:String>
+                  <x:String>6</x:String>
+                  <x:String>7</x:String>
+                  <x:String>8</x:String>
+                  <x:String>9</x:String>
+                  <x:String>10</x:String>
+                  <x:String>11</x:String>
+                  <x:String>12</x:String>
+                  <x:String>13</x:String>
+                  <x:String>14</x:String>
+                  <x:String>15</x:String>
+                  <x:String>16</x:String>
+                  <x:String>17</x:String>
+                  <x:String>18</x:String>
+                  <x:String>19</x:String>
+                  <x:String>20</x:String>
+                  <x:String>21</x:String>
+                  <x:String>22</x:String>
+                  <x:String>23</x:String>
+                  <x:String>24</x:String>
+                  <x:String>25</x:String>
+                  <x:String>26</x:String>
+                  <x:String>27</x:String>
+                  <x:String>28</x:String>
+                  <x:String>29</x:String>
+                  <x:String>30</x:String>
+                  <x:String>31</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/register?returnUrl=%2F" CvElementArea="759, 619, 129, 43" CvTextArea="770, 634, 26, 16" CvTextArgument="Day" CvType="InputBox" DesignTimeRectangle="760, 621, 126, 40" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Day'" FullSelectorArgument="&lt;webctrl name='DateOfBirthDay' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='DateOfBirthDay' tag='SELECT' type='' class='' aaname='' /&gt;" Guid="d74765d7-2733-4a5e-9b18-e1ece969ca1f" InformativeScreenshot="763175d1e54b8efa5a4bfdf92d5ae50c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Date of birth:" CvType="Text" DesignTimeRectangle="375, 633, 375, 16" ElementType="Text" FriendlyName="'Date of birth'" FullSelectorArgument="&lt;webctrl aaname='Date of birth:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Date of birth:' tag='LABEL' type='' class='' check:innerText='Date of birth:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAUCAYAAABs650wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAICSURBVHhe7drNbYMwGIDhDscuubBEJwiDwB4RY7AFJzfGNv78C0iNhOL38EgFG0N7eHGi/qzrqgAA343YA0ADiD0ANIDYA0ADiD0ANIDYA7i1ZexV13Wp55ydX7Ktc/Ga8xY19e7ZBjVH4/Oz/rz1cbP28LLHy6T6rlfTIuccI/YAbi0faRvXC/H+aOy3AKeRd45iX0fsATSgHOlZDe+d9B7Bty2qmd1/8Omgn9Ri5wfnDwNq7ufm9+Nizr8GsYY4L5jYD+L68F7yZaB/HkYddD3voX4f7hq7to398Mz/TuZ50hcPsQdwa7UduQ6ji+sWzCR6/mUQr7Mdn4ikYULvQx4dn9nZi2cx9/LBj2MfPkduZ+/np8+WR+wB3Fot9rWxeOcfztVj6U5evjyk5MWgyZfD5a9xTMCDF5UdL80NY1/+ZFBC7AHc2tXYb+f0ztfKxt7tjjNysc/GVAb+ROzjdUuBT+9F7AE0oBZ7GVEfeRfdys4+E8yabEyJPQD8n3LsZcyjICbj8Trh2JHtWr7GAYDPycfeBNCfD+O5jxdjb4+DQNdeAGbMrx8dn4m9CHR8b2IPoHkmjCbcUvy1iImgHx9e0QthH48iG1wj1kuYwLu5wf1PxL4fJ3F9Oda5cO9/A33+KPaF/yoi9gDQAGIPAA0g9gDQAGIPAA0g9gDw9Vb1Bx+hFvgnRV88AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Month'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="February" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="13">
+                  <x:String>Month</x:String>
+                  <x:String>January</x:String>
+                  <x:String>February</x:String>
+                  <x:String>March</x:String>
+                  <x:String>April</x:String>
+                  <x:String>May</x:String>
+                  <x:String>June</x:String>
+                  <x:String>July</x:String>
+                  <x:String>August</x:String>
+                  <x:String>September</x:String>
+                  <x:String>October</x:String>
+                  <x:String>November</x:String>
+                  <x:String>December</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/register?returnUrl=%2F" CvElementArea="895, 620, 130, 41" CvTextArea="907, 634, 40, 13" CvTextArgument="Month" CvType="InputBox" DesignTimeRectangle="897, 621, 126, 40" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Month'" FullSelectorArgument="&lt;webctrl name='DateOfBirthMonth' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='DateOfBirthMonth' tag='SELECT' type='' class='' aaname='' /&gt;" Guid="4ca12836-a3fb-4313-8f00-405e1902c2c6" InformativeScreenshot="aaed9dce779227d370988300870517db.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Year'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="1985" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="112">
+                  <x:String>Year</x:String>
+                  <x:String>1913</x:String>
+                  <x:String>1914</x:String>
+                  <x:String>1915</x:String>
+                  <x:String>1916</x:String>
+                  <x:String>1917</x:String>
+                  <x:String>1918</x:String>
+                  <x:String>1919</x:String>
+                  <x:String>1920</x:String>
+                  <x:String>1921</x:String>
+                  <x:String>1922</x:String>
+                  <x:String>1923</x:String>
+                  <x:String>1924</x:String>
+                  <x:String>1925</x:String>
+                  <x:String>1926</x:String>
+                  <x:String>1927</x:String>
+                  <x:String>1928</x:String>
+                  <x:String>1929</x:String>
+                  <x:String>1930</x:String>
+                  <x:String>1931</x:String>
+                  <x:String>1932</x:String>
+                  <x:String>1933</x:String>
+                  <x:String>1934</x:String>
+                  <x:String>1935</x:String>
+                  <x:String>1936</x:String>
+                  <x:String>1937</x:String>
+                  <x:String>1938</x:String>
+                  <x:String>1939</x:String>
+                  <x:String>1940</x:String>
+                  <x:String>1941</x:String>
+                  <x:String>1942</x:String>
+                  <x:String>1943</x:String>
+                  <x:String>1944</x:String>
+                  <x:String>1945</x:String>
+                  <x:String>1946</x:String>
+                  <x:String>1947</x:String>
+                  <x:String>1948</x:String>
+                  <x:String>1949</x:String>
+                  <x:String>1950</x:String>
+                  <x:String>1951</x:String>
+                  <x:String>1952</x:String>
+                  <x:String>1953</x:String>
+                  <x:String>1954</x:String>
+                  <x:String>1955</x:String>
+                  <x:String>1956</x:String>
+                  <x:String>1957</x:String>
+                  <x:String>1958</x:String>
+                  <x:String>1959</x:String>
+                  <x:String>1960</x:String>
+                  <x:String>1961</x:String>
+                  <x:String>1962</x:String>
+                  <x:String>1963</x:String>
+                  <x:String>1964</x:String>
+                  <x:String>1965</x:String>
+                  <x:String>1966</x:String>
+                  <x:String>1967</x:String>
+                  <x:String>1968</x:String>
+                  <x:String>1969</x:String>
+                  <x:String>1970</x:String>
+                  <x:String>1971</x:String>
+                  <x:String>1972</x:String>
+                  <x:String>1973</x:String>
+                  <x:String>1974</x:String>
+                  <x:String>1975</x:String>
+                  <x:String>1976</x:String>
+                  <x:String>1977</x:String>
+                  <x:String>1978</x:String>
+                  <x:String>1979</x:String>
+                  <x:String>1980</x:String>
+                  <x:String>1981</x:String>
+                  <x:String>1982</x:String>
+                  <x:String>1983</x:String>
+                  <x:String>1984</x:String>
+                  <x:String>1985</x:String>
+                  <x:String>1986</x:String>
+                  <x:String>1987</x:String>
+                  <x:String>1988</x:String>
+                  <x:String>1989</x:String>
+                  <x:String>1990</x:String>
+                  <x:String>1991</x:String>
+                  <x:String>1992</x:String>
+                  <x:String>1993</x:String>
+                  <x:String>1994</x:String>
+                  <x:String>1995</x:String>
+                  <x:String>1996</x:String>
+                  <x:String>1997</x:String>
+                  <x:String>1998</x:String>
+                  <x:String>1999</x:String>
+                  <x:String>2000</x:String>
+                  <x:String>2001</x:String>
+                  <x:String>2002</x:String>
+                  <x:String>2003</x:String>
+                  <x:String>2004</x:String>
+                  <x:String>2005</x:String>
+                  <x:String>2006</x:String>
+                  <x:String>2007</x:String>
+                  <x:String>2008</x:String>
+                  <x:String>2009</x:String>
+                  <x:String>2010</x:String>
+                  <x:String>2011</x:String>
+                  <x:String>2012</x:String>
+                  <x:String>2013</x:String>
+                  <x:String>2014</x:String>
+                  <x:String>2015</x:String>
+                  <x:String>2016</x:String>
+                  <x:String>2017</x:String>
+                  <x:String>2018</x:String>
+                  <x:String>2019</x:String>
+                  <x:String>2020</x:String>
+                  <x:String>2021</x:String>
+                  <x:String>2022</x:String>
+                  <x:String>2023</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/register?returnUrl=%2F" CvElementArea="1032, 619, 130, 43" CvTextArea="1043, 634, 31, 13" CvTextArgument="Year" CvType="InputBox" DesignTimeRectangle="1034, 621, 126, 40" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Year'" FullSelectorArgument="&lt;webctrl name='DateOfBirthYear' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='DateOfBirthYear' tag='SELECT' type='' class='' aaname='' /&gt;" Guid="781cc2c9-5f33-49ee-bf26-e9fbedb26139" InformativeScreenshot="566bdadd04e752da144bee7ce729b26e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="[Username]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/register?returnUrl=%2F" CvElementArea="759, 565, 402, 41" CvTextArea="767, 579, 91, 16" CvTextArgument="Company A2Z" CvType="InputBox" DesignTimeRectangle="760, 566, 400, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Company A2Z'" FullSelectorArgument="&lt;webctrl id='Email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Email' tag='INPUT' type='email' class='' aaname='Email:' /&gt;" Guid="798dabba-40c3-4aa7-a930-f0c386abcfd0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAAsCAYAAABCK04MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPLSURBVHhe7djbbeJAFIDhLYFHCqIKWkChl7iRiD6QXEYiUQFIaHbOXMyZ8Yy5eBTh6P+kI20wGC8P58f8O5/PhmEYhmHmzhCUy+VirterAQDgEdIMaUcSlBiTvu/Ndrs16/XarFYrhmEYhhmNNEJaIc3QUXFBiTEhJAzDMMyjI82IURmCIqQ28oTdbmdOp5N7DACAnDRCWiHNkHaIJCjx7oSYAADukVbEuxSRBEUOyAAA8AjdDYICAHgZQQEANEFQAABNEBQAQBMEBQDQBEEBADRBUAAATRAUAEATBAUA0ARBAQA00SYox85sNhs1nenDob/v2xw+Jv7PPwezV5/N/us7HLCyY8l8HOyZAWA5Zgel/5QFmC7T76+9fWxvDj/hgb9MYvrRmc5GJYmFCMHojuFv+yl1yd8Fo9cAwDLMC4q7Myl/M3eh+VRHkruYNDYuQPa5Pk5+ZKH6MIXHhnPJUravP6pv9/m3+ak7JrewO3PQ546vd8eyEE78H4Vcs4TEXWt2HdXH9OeS8MGpHweA9zUrKKNo1LilrBZ19ncMR/xWPoQknjtZ9GHpqiXvriMu7vy98iUd7gBu1+2P+7sL//OVvtOIwSgLcZP3KsWooP6ZhZ/O8jgCwELMCkq+fMvGS1roxTr6Jj9azv4cPjg+AMlPQneWebLEC8+tX4sKRkF+3fVYBBPX6SNafy8AeHe/EJRCACy3QCeDon9myoOSL95aZOyCj/NgUJL3ln9X7xj0NQVTP4+F6yl+Xu51488IAJZkVlDufiN3fjkoYXHrBf3MHYp+L7muajBDBEozes1UTMK13w8zALy3WUGZ+kZ+i4Rf0PnC1Ev8+aDcYuGoSOhQRc8FJZ7jYN8zD9dN/prIPa7/L5N3H/7/lTwfABZqXlAst0CzqLiFrJeoW6pqOWd/vxIU/Xy93PNzxWt5Jij+Oel7pApRi/T5w3nKMYnXVg4yACzN7KCIYWkPU1iSyU9E6UJ/JSjdpzpfsvjDt/54zIYiWdyPBCWco/Yz1HQIwvvb8/nYFsZdb3adoyE0AJalSVB+18TdQTOy7NPoAACmEZQSuYup/twFACghKBn/MxV3JwDwrAUGBQDwjggKAKAJggIAaIKgAACaICgAgCYICgCgCYICAGiCoAAAmqgGZb1euwOn08n9DQBAjbRCmiHtEElQttutO7jb7YgKAKBKGiGtkGZIO8QQlOv1avq+H+5SGIZhGObeSDOkHdKQISiXy2WIitSGsDAMwzC1kUZIK2JMpCFDUHRUAAB4hI5JEhSGYRiGeX3O5j9wS1m3gJ/5WgAAAABJRU5ErkJggg==" InformativeScreenshot="5ac8dd81ee15f60ecda9b0d740c3645f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Email:" CvType="Text" DesignTimeRectangle="375, 578, 375, 16" ElementType="Text" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl aaname='Email:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Email:' tag='LABEL' type='' class='' check:innerText='Email:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAUCAYAAABs650wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE6SURBVHhe7drJjYMwAEDRKY5y6CUUEvqIKIMuOHmA2CwjkBIxASl+hyexGCunDzj8dF0XAPhuYg+QAbEHyIDYA2RA7AEyIPYARz2qUBTFtrIO7dY1B7X3cpp7ub01diD2AEcNsf9Q1F8h9gBneCn2TaiKMtSPOpSrp/7heHoT6M+38zXNLR2Pbs10bvfJfnzLqEITxyViD3DUy7Hvgz2NS5GfAz/GPQZ93F7OGZeKqsdz3zIOwNliiLeU9zaOe8Y9xXqwjPs0z26019eLPcDZ3niy/xv7+WbQ25hnDHm8cQzEHuAqH4j9HPm0/u7JHuBa/x77NtTleqzYA1ztQ7Gfzz33LeMAXGmIdB/ibelrm/eWcbp28YnmeF0MfvxDdzf242/x6SVAlsQeIANiD5ABsQfIgNgDfL0u/AL0JfxyI1yG+wAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Company name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="Company A2Z" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/register?returnUrl=%2F" CvType="InputBox" DesignTimeRectangle="760, 627, 400, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT Company'" FullSelectorArgument="&lt;webctrl id='Company' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Company' tag='INPUT' type='text' class='' aaname='Company name:' /&gt;" Guid="6d732e6c-490f-44eb-a115-5761092975de" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAAsCAYAAABCK04MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADOSURBVHhe7dWxDYAwAMAw/v+xh3QqGwswVM1oS7kh15xzSZJ0mqFIkpKeoYwxJEna7nMoALDDUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgIShAJAwFAAShgJAwlAASBgKAAlDASBhKAAkDAWAhKEAkDAUABKGAkDCUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgMTvUCRJ2u01FEmSTjIUSVLQXDfqd+BnuMxXZAAAAABJRU5ErkJggg==" InformativeScreenshot="454161cab9d51ce0ab6965789d7d9435.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="375, 639, 375, 16" ElementType="Text" FriendlyName="'Company name'" FullSelectorArgument="&lt;webctrl aaname='Company name:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Company name:' tag='LABEL' type='' class='' check:innerText='Company name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAUCAYAAABs650wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABfSURBVHhe7dQxAQAwDMCg+Xfcq/PRcGCBNzMLwG2yBwiQPUCA7AECZA8QIHuAANkDBMgeIED2AAGyBwiQPUCA7AECZA8QIHuAANkDBMgeIED2AAGyBwiQPUCA7AHOm/3gJ+tWg4QQ8QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NCheck Action="Uncheck" DisplayName="Check/Uncheck 'checked'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NCheck_2" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/register?returnUrl=%2F" DesignTimeRectangle="760, 462, 13, 13" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl id='Newsletter' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Newsletter' tag='INPUT' type='checkbox' class='' aaname='Newsletter:' /&gt;" Guid="9da979f3-4001-4746-a79a-94cd298344d0" InformativeScreenshot="a3c11a85bb4b0cb220fbe3677e5fdfed.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Newsletter:" CvType="Text" DesignTimeRectangle="375, 460, 375, 16" ElementType="Text" FriendlyName="'checked'" FullSelectorArgument="&lt;webctrl aaname='Newsletter:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Newsletter:' tag='LABEL' type='' class='' check:innerText='Newsletter:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAUCAYAAABs650wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI/SURBVHhe7dm7dawwFEDRVxzl0MtQyNDHLAIXQRdE8tXnoquP4QV2gk6wl4cBpImOBP53HIcDADwbsQeAARB7ABgAsQeAARB7ABgAsQfwDJ/FTdPklk99bnfrPLn5vVff/539PbtpXt3eOVcL1762H49/C7EH8Awp9tO0uK04R+w9Yg/gGXzs58UtEvYylp3YnwtDpE8DTaT31c3T7NY9HYvtpddvbjFjNMG241zNp9/L9V/Vsd5fXFf8Hv8bFrfqeX9PmKte8Ig9gKcIsZfYhUDb1zlV7OsY2qCHz/mcRjaPFeO6NQtIeVzE/mo+vfZiZ1+M5RXjpQXnP54EiD2AZ9DYy+cYaQ2iDXH8nOMd5cCW58Mu/iXjakz9HOa64mnByIG+m6/83B77mJdPFp7/XXHuGPt6/B5iD+AZTOw1xm2Y0064JwW2DKksGH4nnsbNr3DSfHqv3XmLHPv7+S5jn55SevcTewBjKmIvUiiXTxv7yzjqOGfk/f1+d+3/mtcxygbZBtzE/mq++9i3O/uM2AMYTR17EcIpsZzP2Nvwm3sLPqDxn556XdjRvyW8JsqNsNOPi0GO/f18l7G/jTmxBzCaTuzP1zkSxDO4Icp2t1wHOd+jEY2Lho1qG3G/ILQ7ezl3M9917HVu+0RhA0/sAYymG3uRXrPYMGu8lT2Xz5vA9l6n2Nc3npk73F8fm2uL+c5x0nz1sQgLibk/x70Te/OEcX4niD0ADIDYA8AAiD0ADIDYA8AAiD0APN7hvgHedTKIhZH64QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="[Password]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/register?returnUrl=%2F" CvType="InputBox" DesignTimeRectangle="760, 630, 400, 40" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT Password'" FullSelectorArgument="&lt;webctrl id='Password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Password' tag='INPUT' type='password' class='' aaname='Password:' /&gt;" Guid="01cb2229-97e9-4c90-89ff-5a7a7f53eafd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAAsCAYAAABCK04MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADOSURBVHhe7dWxDYAwAMAw/v+xh3QqGwswVM1oS7kh15xzSZJ0mqFIkpKeoYwxJEna7nMoALDDUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgIShAJAwFAAShgJAwlAASBgKAAlDASBhKAAkDAWAhKEAkDAUABKGAkDCUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgMTvUCRJ2u01FEmSTjIUSVLQXDfqd+BnuMxXZAAAAABJRU5ErkJggg==" InformativeScreenshot="22ae7e20280fda99b384733cb35d9ff2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Password:" CvType="Text" DesignTimeRectangle="375, 642, 375, 16" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password:' tag='LABEL' type='' class='' check:innerText='Password:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAUCAYAAABs650wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH/SURBVHhe7drBlYMgEMbxLc5y7CUWEvvYZxl24YmVgdEBEbNvTwv/w+8lZAgkl8+R5GvbNgcAaBthDwAdIOwBoAOEPQB0gLAHgA4Q9gCatb5HNwzD1Ti7tTD/v1pe+3d6LcWaIuwBNEvCvhCCEo4NBT5hD6Brd2G/rbMbh8ktcSxhaTt/+x6Ze9bG9/pYk33txUTmjW5e43jn95y+4/h7OtYYSvPeuk+sJftObrJhL2ud300R9gCa9UnYX7r8GLwhiBc3Hc/zcaVm1vc1PU5K58a67GcCPhuHC5EJ7xj0x1p6oaCzB9Crctivbh5r4VgLdKtWC3toTbrz1x7KtvuW52FecrcQ5+tc+9y73DUU5pQQ9gCapR31ReG8Pp+rQZ28ngVqreYDOIR47OJ9Rx73lfCvXExk3ZuwLwW7nX+HsAfQrE9C8AxsPSq56dj1uGSXd+LFmn/Nh/sR8r6L98cz/rG+F2EPAL/wHILpcUtQO56JaxbuDK610NHP+2t6AZCO3v/YenwmjnEA4M8+DfszbMPYd+gh7PPgt/NrtXN8rhU/T34hkbuChx9ok++Q7at3FYQ9gF49h/0u/rtFAlNCNIa0vs8c0VxCtVbbhXDP/0ljgl0l66T1YtduP/Pe5c92jqxl9owIewDoAGEPAB0g7AGgA4Q9AHSAsAeA5m3uB2N3ZLMkFqrnAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Confirm password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="[Password]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/register?returnUrl=%2F" CvType="InputBox" DesignTimeRectangle="760, 621, 400, 40" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT ConfirmPassword'" FullSelectorArgument="&lt;webctrl id='ConfirmPassword' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ConfirmPassword' tag='INPUT' type='password' class='' aaname='Confirm password:' /&gt;" Guid="95321860-5905-489a-9fdf-1b6616414ce0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAAsCAYAAABCK04MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADOSURBVHhe7dWxDYAwAMAw/v+xh3QqGwswVM1oS7kh15xzSZJ0mqFIkpKeoYwxJEna7nMoALDDUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgIShAJAwFAAShgJAwlAASBgKAAlDASBhKAAkDAWAhKEAkDAUABKGAkDCUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgMTvUCRJ2u01FEmSTjIUSVLQXDfqd+BnuMxXZAAAAABJRU5ErkJggg==" InformativeScreenshot="93a3f5446adf8987aceb7aee340b44bd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Confirm password:" CvType="Text" DesignTimeRectangle="375, 633, 375, 16" ElementType="Text" FriendlyName="'Confirm password'" FullSelectorArgument="&lt;webctrl aaname='Confirm password:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Confirm password:' tag='LABEL' type='' class='' check:innerText='Confirm password:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAUCAYAAABs650wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALMSURBVHhe7ZnbjeMwDACvuJTjXuIu7ifuY5Ey3EW+dKKelETrsgvc7cKej0FiUxZJBRgpya/X6+UAAODcIHsAgAuA7AEALgCyBwC4AMgeAOACIHsAMHi69XZzN8X6YY37Krvbljz36n7f/ev9aYyDd3i+sX7IHgBaPtZR7vvmFn9veezt2K8S5lvd04rBp0H2APBJ4onePMWHTUALWp/OO9kkmW+PpcaXze1lnvqcbCBaVrt/Znls5ZuF1CLx5fFU+Ra37Ulyap6SX5M3Fp23E6OeZ4injS7HmjwHMemh9FvGxZrzs5KzrHOzJsY4vx4xT4o1eVe3Sv255uFziiB7AKgciGIkib5IsbvOMirxuIkUUYZ4zRNkm8YGURrC0/eynMt8s7pzLUW+ba1hLi3mJN4o4n7z09eTWNdf7Kkfm+Ihn+q3u469qt5SP2WuVG9daxtkDwCF4UR6hCXXICF98jSE3WwG9Xkds2ponhWG/CLPNl/BqMWsvzATumYWixtKjkn9693nzD1I/vA+juu/leh++97fWh8DZA8AhXdlb49Twv0fsm/G/E32k40p3Qt55YScyKJu7ndCncWk5ihxqc3nl5ypZonNNpMwb5qv731YC48efwSyB4DK9MRbCXI5ieyrsPMYW8BxbWTceBI3Y7nGInk5xUtOeZ3nQvYA8I85EJ2gBW5tCjqu36f498q+i5X6259bIpM18Fj12TGZJ/5JnTcA6SP82Vp64WccAPgu0im1kV0QphZKlNTh9Y+T/VhrFGwv29RH6b8Xvx4/i9VrvZaht+YZT1hvVXt3PYq8y5s+r3bMCLIHgJEsSEUjqECV2SCbHyf7xa33KFq71nTfs36kvvKYLNNMX8dRzBPlrr4BGesSaOaZrFtG1+zXYdNjwlwqZwLZA8C5ORLsxUD2AHBukH0A2QPAuUH2AWQPAHABkD0AwOl5uT8tFTpIz9G4bAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/register?returnUrl=%2F" CvElementArea="887, 688, 144, 41" CvTextArea="921, 702, 78, 14" CvTextArgument="REGISTER" CvType="Button" DesignTimeRectangle="890, 691, 140, 37" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Register'" FullSelectorArgument="&lt;webctrl id='register-button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='register-button' tag='BUTTON' type='submit' class='button-1 register-next-step-button' aaname='Register' check:innerText='REGISTER' /&gt;" Guid="cfee53e2-9e4a-4ace-9a6c-721aa26b34cf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAApCAYAAADag6AFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI7SURBVHhe7ZhLboMwFEW7vq4xq+gsu8ggK2CaUZVIkYgSBxtfwPiD85CDke6VzqAB7Ffeqe30RzHMilAgZlUGgX7//gnJBqFARARCgYgIhAIREQgFIiIQCkREIBSIiEAoEBGBUCAiAqFARARCgYgIhAIREQgFIiKQagQ6XF62kkCu7eTeuzq19vNgnuo4GddwfqibvTrEGVPTj3u73J3P/bpe6nR2n0nGzJNbc/q+phnr2hqkLoHahzp411rV6AKHhocbHeN41Q9Pm65Bo6ay+eOaZ+c1NU/9YLiZ5lpA4OyaE/el5t0AZAcCdTiN+UAg89xcHjAfZ/5zL26oYUYsbwXrKClQR3TeDUB2IVC/jXwu0GcvPCxQzjwDRQXqr1GgCEtb2PhSc5sRX0HC+OP24iIhMWaUFCi5mn4fZBeHaPeF2r/ESMZ7QwIFnh2kjTWvH8dJ1lY7Jbfm1H31yKNBKl6BbOO8JTvW6DnLK5A7Z964g+jfOgOZMes5PAOk7i0MX7+dZuU2Y/kMJBFI00sUEKXQFgZpa5IIqf4M5L+8/EYvnRtSAkUl0cREKSQQPo/WswHIDg7R9uUJVgqNL6AGDUmJabdQr6bE/MUE6rCrce7vXRpkBwJ1mMZ0MdvR2PxwAivOiv9Em21wluhWsiBQPKg5LRpqqWErQ6oRiOwLhAIREQgFIiIQCkREIBSIiEAoEBGBUCAiAqFARARCgYgIhAIREQgFIiIQCkREIBSIiEAGgRhGEgrErIhSbz5cp/8ObsBIAAAAAElFTkSuQmCC" InformativeScreenshot="92781dc150c7761484dfe41f21a9fcfd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Your registration'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" TextString="[result_message]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/registerresult/1?returnUrl=/" CvType="AnyWordGroup" DesignTimeRectangle="368, 432, 1200, 78" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Your registration'" FullSelectorArgument="&lt;webctrl class='result' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='result' tag='DIV' type='' /&gt;" Guid="1a4d955b-fd8e-4559-a899-ed079ab014ba" InformativeScreenshot="e3c438488fff6d94e427f5ca2f0bc95d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[result_message=&quot;Your registration completed&quot;]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+            <ui:Comment sap:VirtualizedContainerService.HintSize="388,56" sap2010:WorkflowViewState.IdRef="Comment_3" Text="Login with registered account" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/registerresult/1?returnUrl=/" CvTextArgument="Log in" CvType="Text" DesignTimeRectangle="1280, 79, 33, 45" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl class='ico-login' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ico-login' tag='A' type='' aaname='Log in' check:innerText='Log in' /&gt;" Guid="2c55db34-4841-4cb1-9bf8-9ab2864b505c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAxCAYAAABd2WCOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAELSURBVFhH7ZPRDYMgEIbdmiVkChxDptC3lgF0iSvgNVBr01+kDQ/3JaSF3nGff2xHDdLd7o5aW20mxZ9NIVIoIoUiUigihSJSKCKFIlIojUutlrTSZFfeV2Uh2ysyM2+/8Cepc8BS06BIqW3pceHTwESGz9Vg/PejO7Kk4hxfl923TxCSWkbtm40f74l16aIoO8RfuA6RSg8W+3vrKxKQVGjM00kiIaW8Z79/spfKamZTIrVdmEvFRILUWw8qxakHyqR+kVQFqfrv1CkpP+BlpQFxOJ9/+vfp0VZOqgZhQD6wkItSWwJHyV6hblKVECkUkUIRKRSRQhEpFJFCESkUkULpnHPU2mowKaIHC76MDPE58Y4AAAAASUVORK5CYII=" InformativeScreenshot="39f40c80d70ed93cbde86d8738e8c402.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Register' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Welcome, Please Sign In!'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" TextString="[LoginHeaderText]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/login?returnUrl=%2Fapple-macbook-pro-13-inch" CvType="AnyWordGroup" DesignTimeRectangle="370, 363, 1180, 34" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Welcome, Please Sign In!'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' /&gt;" Guid="6a829289-53ca-45bc-9a96-ed8ee2167ef8" InformativeScreenshot="2dea5d5fc6be00a3cd5dd16c976510c6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[LoginHeaderText=&quot;Welcome, Please Sign In!&quot;]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_6" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="[Username]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/login?returnUrl=%2F" CvType="InputBox" DesignTimeRectangle="1092, 546, 360, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT Email'" FullSelectorArgument="&lt;webctrl id='Email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Email' tag='INPUT' type='email' class='email' aaname='Email:' /&gt;" Guid="ecaea8a6-dfe9-400b-91f6-e834e0f41625" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWwAAAAsCAYAAABBsIJhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFsSURBVHhe7daxiYBAFEXRLcHQ2mzBYi3EChRklic4aLDp6odz4AXOGF/mZ9u2ZmZm318P9r7v7TiOBsA3pMlp8yPYV6yXZWnTNLVxHNswDGZm9sLS4LQ4Tb5H+wz2FWuhNjP7ztLkK9o92JGa54d5ntu6rucZAP8vDU6L0+S0OR7Bvl7XYg3wvrT4emXHI9i5yAD4hnuXBRvgwwQboAjBBihCsAGKEGyAIgQboAjBBihCsAGKEGyAIgQboAjBBihCsAGKEGyAIgQboAjBBihCsAGKEGyAIgQboAjBBihCsAGKEGyAIgQboAjBBihCsAGKEGyAIgQboAjBBihCsAGKEGyAIgQboAjBBijiz2CP43herOt6fgPwnrQ4TU6b4xHsaZrOy3meRRvgRWlwWpwmp83Rg30cR1uWpb+yzczs/aXJaXMa3YO973uPdmou3GZm7y0NTouvWKfRPdj3aAPwDfdYP4JtZmZf3tZ+AW/74Rb0JYAOAAAAAElFTkSuQmCC" InformativeScreenshot="d77be7a74edf37ef822a2942d417c3ca.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Login' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Email:" CvType="Text" DesignTimeRectangle="972, 558, 110, 16" ElementType="Text" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Email:' check:innerText='Email:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAUCAYAAABRcGk6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEOSURBVGhD7ZftDYQgDIZvOMZhFxlE9jCMwRb86gmWDy+YYE4uueY1eRKRlhgfW+VFfIQQwB8DkUKASCFApBAgUggQOcJmSCnVR1vyvZwv8asua7fnvdgIRI4QRU4SNgJEPsWQSEdGabKbJX2q1ng9V/A+72uOW/J1ZnFl7rIiU3cw5DguA5EjDIvcZZS4LLDKS+JYVjpv1+T2bbZjjNY6A37IPfTqOe4Ql0VEWnFlnUsh53yInMGNivwUWUXvdNZJkviliEDkTCaIrALz9w4VOZ/HRXqy+hwLkb9gksg6d4zRWmcTBewPuU/+K73XWoNvtikpj2Xyz9GlyHQv2H6IBSKFAJFCgEghQKQIAr0BksPx+xKCDbwAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="[Password]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/login?returnUrl=%2F" CvType="InputBox" DesignTimeRectangle="1092, 601, 360, 40" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT Password'" FullSelectorArgument="&lt;webctrl id='Password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Password' tag='INPUT' type='password' class='password' aaname='Password:' /&gt;" Guid="91916144-6a81-40f7-8c2b-a2f9169f128a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWwAAAAsCAYAAABBsIJhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADISURBVHhe7dSxDYAwEMBA9t8xg6QKHQ3Qv6U7ySv42nsfSdL8DFuSIj3DXmtJkgb2OWwAZjFsgAjDBogwbIAIwwaIMGyACMMGiDBsgAjDBogwbIAIwwaIMGyACMMGiDBsgAjDBogwbIAIwwaIMGyACMMGiDBsgAjDBogwbIAIwwaIMGyACMMGiDBsgAjDBogwbIAIwwaIMGyACMMGiDBsgAjDBogwbIAIwwaIMGyACMMGiDBsgIjfYUuS5vUatiRpdoYtSYn2uQHz36Vyqj3jcAAAAABJRU5ErkJggg==" InformativeScreenshot="8bbc99b77bad51de9279e5ac721a54d1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Login' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Password:" CvType="Text" DesignTimeRectangle="972, 613, 110, 16" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password:' tag='LABEL' type='' class='' check:innerText='Password:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAUCAYAAABRcGk6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGrSURBVGhD7ZbRkcQgCIavuJRjL7GQ2MdOyrCLPHmCENEYd19DuJl/LgYWIp8w/iX6O47D9GAZSCUykEpkIJXIQCrRo0HGzaVlWa5yIcWB/1O1r3lP6z60sZ4PcrBB3LgimK8FecSQ3OLTTmsshOxY+Rv0rTa3xa82zCsPCvq5FCKtsyCn/9D6488Yy8hv4zxka/L65CVIjFX3xlIP8tKdVNRS5D3587lfT2wiPth4xLe+ZMd8Al63LodMgCGIZyw+BO/ryJiCm218BktqZis52IZdteaCy67B5+LXdDn5s698Bl26feAz0msuO70vQ2jed8Wa2aC4BRB1H3QS5UWwk4OCcW9AjqBJ/zvpHK1CFQaPr5tO4xGW1XfQ0AbvANwJELoPRib8n+cykJ2+b7AdgUWzkUkxBx19tZVODPkdw8VOhIvL+U02Wn/SryBrIcsaOquA7KFK/5mtrmss+p7+kGA3f7nsNHvo8vI0eDfILLoFYjGwQASAfyfG5qVgM1tWAdffOAU0VhOntQ+7TX5z7s4gfTCWyEl6NEhTlYFUIgOpRAZSiQykCh3pH3e3WjxqEBJHAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/login?returnUrl=%2F" CvElementArea="1194, 708, 143, 41" CvTextArea="1239, 721, 52, 14" CvTextArgument="LOG IN" CvType="Button" DesignTimeRectangle="1196, 710, 140, 37" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl aaname='Log in' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log in' tag='BUTTON' type='submit' class='button-1 login-button' check:innerText='LOG IN' /&gt;" Guid="69b49e8c-237e-480e-ae32-9372c68f7c76" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAApCAYAAADag6AFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG+SURBVHhe7ZhBbsIwFAV7vp6RU3THLVhwgmxZVURCCgI3SvxSNzG2+YlkQWekWTR2TZBHDvDhAFZAQLCKKaDPr2/EYgUBoUlBQGhSEBCaFASEJgUBoUlBQGhSEBCaFASEJgUBoUlBQGhSEBCaFASEJsULB3Rxh8659nSJjM3tXOPf58S5i8zzHq+u9dMmUvO9+3M4b7w/525uP5u3nPt6ivcPqLkN728+b9jAyOaO1+/ucAyvp2OQ8YDi90hA1S0JaDx5miY25jexu7qdrg2xzeOR+deLBdR29+iaBFTd/IbuTv3mhYHMHR5Vv5u7dlOjAfX3twh1Mff1FG8dUH6TwjXSp1WJjwLS2uG9ElB1ywJKjecDGsf/kDjRHgfU/z17PBJQdcsC2vIEyj0SkwFp3P8/AVU3H9DWn4HWBhQ+ygiouvmAcqdKeCIM15LfwrYIyK/Rv0bbjxFQVUsC6n3yd6Bxgx9/Fko94koCCtcioKoGGzFncUpE5qY2b8NfoqOBa30Cwv+qICA0KQgITQoCQpOCgNCkICA0KQgITQoCQpOCgNCkICA0KQgITQoCQpOCgNCkmAICsEBAsALnfgC+CiffUc+gmAAAAABJRU5ErkJggg==" InformativeScreenshot="2f8bc0f18305d7e5a9a3a2dcf63daef3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Login' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:Comment sap:VirtualizedContainerService.HintSize="388,56" sap2010:WorkflowViewState.IdRef="Comment_4" Text="Search and Checkout a product" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT small-searchterms'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="Apple MacBook Pro 13-inch" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/" CvElementArea="1191, 163, 281, 42" CvTextArea="1200, 177, 81, 13" CvTextArgument="Search store" CvType="InputBox" DesignTimeRectangle="1192, 209, 280, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT small-searchterms'" FullSelectorArgument="&lt;webctrl id='small-searchterms' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='small-searchterms' tag='INPUT' type='text' class='search-box-text ui-autocomplete-input' aaname='' /&gt;" Guid="af0e2920-ec21-4a7d-95c4-dbc0cada5ba5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARwAAAAsCAYAAAC3+Qf5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKfSURBVHhe7djLjdswFEDR1Jd+XIWqENxBtqMuvHYBXqYCRvyJ71GkP6DmJYjuAQiMbX3oBa+p+eEAwAjBAWBmC879fmcwGIzDx89fv7ehggMARyM4AMwQHABmCA4AMwQHgBmCA8AMwQFghuAAMENwAJghOADMEBwAZggOADMEB4AZggPAzHhwbrO7XC5iTG55pM+sPRY3HXV//72mxf2trwL8j8aCE2Izu1t6GaQAzepNIwQH+KcNBed2XXc0131Zdu9XuyAdo4dbpvKZH9NXXuY3N69BW76m+FkOQAhL4/gUnPmajpfnNPnrl+tsc1bzLUF95HlU73fn2bs+cFJDwYkL8MWOot4FqV1Iio1YiPqaacGqhRrfK9ESr3OItuPjZyVgUrx3+ax6Xe1w4rzq+OTX78yzvh9wPkPB8cJuxi+2PNSii4usfrwKi1UdJ6gg1Ys2ndvbtahzo94uLM+tGwAVnP089Pmdedb3DfOTOyPgXIaDU8QFmMMTF1/65W+NajHqcPWD0w/I6qPgrOSjUx0xGZzGdT1/7V5w9PeRg+DgvA4MTlF2Ia2dgbYtzObi/ubgZOG8NI987BHBeXVf4GQGgvMkJmHn4H/JX/3fwl+jWsgvgnPcI1XDNu/093af1nd945GqN0/gpAaCkxbV7pe/ikxYxPKYZws1vn72SLV/T1zvo+DsY6iOVcFZjw7ftTwO6df9ecrrEyGc3VBwghAUH4ky9MLLi7N8LhehPt/HQi7U1kJeyUcgP3IkPt3h1NdRMYj3lrHU30P+L+bNeRIbnNx4cADgTQQHgBmCA8AMwQFghuAAMENwAJghOADMEBwAZggOADMEB4AZggPADMEBYIbgADBDcACY6QaHwWAwjh7N4ADAdyM4AIw49wfRkpnTVHxuvwAAAABJRU5ErkJggg==" InformativeScreenshot="e4e979312118125253dba6de9cede25b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/" CvElementArea="1470, 162, 90, 43" CvTextArea="1485, 177, 60, 13" CvTextArgument="SEARCH" CvType="Button" DesignTimeRectangle="1471, 164, 88, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='button-1 search-box-button' aaname='Search' check:innerText='SEARCH' /&gt;" Guid="3f9618fd-0099-4e07-adc3-d75886e6a2f1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAsCAYAAADozd+ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH1SURBVHhe7Zs9jsIwFIQ5H2fkFHTcgoKWJs0WVCuQkILAm/EjxL9RIsGIrOaThsJxEvvzs7PNrpygIuFkVsfj0SHr7a/y4Xjh/rej1EF5b4CEEwMknBgg4cQACScGSDgxQMKJARJODJBwYoCEEwMknBgg4cQACScGSDgx4L3Cm/vzaT0Ptz+MXQ9ob24TPqvL5vTwl5ombg+v5STvrPVP34exFcaw3l7dvnXucrom7fMD3ifcy7y7XdYWCKtOqpTWNZ285tyJqi3GuY3aXu3ROExY+ozdGSML+i1NuJ9AQUDUPkd43/dwc5dC1daE20INi+z7TRG5NOFWWeXt/MoM4Vgom2R5wtOEz5C1NOGIbdOAVAgmVSGaUFrV/r74uKoJt4Xv+8bVPpqRsYGvFD7EqqJn7hmey8zFmdgS4cLMFL60Ci/Fi+knMkm4SSoS3Jstit8VqZh/e6SMVJLfqs+qmyI87J+1D8dMvgv6PoWdUHnntA/6l1a4bfH0o5kMdoLw2l876bOKwrvYdyQch92XvjfrtzThPs8KC4mqvnB9oJv8jx0LtTPXFtWqvyb8JTjZJdkHPZW7SOHKaICEEwMknBgg4cQACScGSDgxQMKJARJODJBwYoCEEwMknBgg4cQACScGSDgxQP82SIwX7n8FDQmn4twfTtIgbH+m/HUAAAAASUVORK5CYII=" InformativeScreenshot="09acdfb145bc052e9e181b86366d9b79.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apple MacBook'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/search?q=Apple+MacBook+Pro+13-inch" CvTextArgument="Apple MacBook Pro 13-inch" CvType="Text" DesignTimeRectangle="698, 685, 263, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Apple MacBook'" FullSelectorArgument="&lt;webctrl aaname='Apple MacBook Pro 13-inch' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Apple MacBook Pro 13-inch' tag='A' type='' class='' check:innerText='Apple MacBook Pro 13-inch' /&gt;" Guid="1e7bd36e-c5f7-48b8-8f42-df4818e256f8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQsAAAAYCAYAAADtYNjTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATiSURBVHhe7ZlLbttADIZ7vh7Hh/FBkpXX2RtZ5wRBdo3hAFkp8yBHJIfUUHaUFio/YIBKGnHInw8Z6a8pCILAQQyLIAhcxLAIgsBFDIsgCFzEsAiCwIU5LJ6f/ky/H9I6XadXuLcNn9PjKZ3z9AHXtwJ2ks/HF7ilAvu2iOvlUjXT1oY6vp7f0xmX6Rmufcx6qWvzvBPertPh4X16fINrSnl2g18lF4bNO7hN631gDIuP6ZgSczhlYUbNdy/fPCySz2bh0QbZcFj0em04oBJ3DQvVp5r/n2kKPEvJGQyKw/kTbmD+/l6zxrCQtKkMiby7kZeAAvi2YXGdHtOvornACLn4TpfpuFXjmsMisfTsTr5/WCQ29LcBZ9TVD4vy61b6BwNk2w+YTQwLBi8iSxxM5HN5biS8JRa/HrDYYDCGBSuktIbNTfzO7yr7cyzHF6NJ5M/dtLSBU/Uw9iw1WHkmGwJ8IfaWBk1bwvc+R7NddWgWDB0Q9lWvew/n65xH8p7UxDX4IaZiX9XGwDsshM2mkcjz2hw3OyInts77oR8WrEiUa0D7m0YVkiSdJGZOrvy1AkVLCgyTNb8zKOwC2VPO1RozN5RiC/xkBQjFQO/VmPv4mjbKO5V6JtcQdKB+wPt0n6kFGQ6tgMsVPh81n6IDhcWCNvvYOk20uEaUs0b+ZlbYFjZRR/pur+04x5odO+/7ohsWvPAyelFVUem+DOzFxpfNhLBEine6YQJYthrUz/pvtje/X2z28ZRYRHxWLLIgil74LhSNtfohIPWTulYtupjVAs7vgM+uxut1mJFNaew1NFndPKKxezAub2wJYbNqJN8V+jpy7LKzU8Sw0Bu1CsRF1BtMFLtVTKzYRVOahSb2dfCCpgnOZL+qTaPwEdnwzK9BoZq+oy7zM0s/do6ln9Ci5ucyHcUZy4CNHKO2mM6G9qYmK5vHoy0CGg9tC5uoER/Owk+HH0t27NrcB3xYQCLMRcQoxa6Iw8QsxT4qJlGIK3zgiCHAzs7nYYLFvgw0JZ6h+VXjGhQ0+K42K55R7Ck+ILRgTXuab9X3umQxayz40MHPQ2xNNhwWCfpBwiHcxS5seprck2OPnb1ChsVy8dAEtWtlL9tnfRnhvj0s/IUzI/2v1+WMbLMlUt/Xx8L98hSS3dwZXlCWfix+Sz/VN675HK+FFbcGP69h5urnhoWJsBnD4n7mYcEaWAEaAZ/rCRNFZdlkiZSFaBXaqAD74i+JTdf5v1LnhpP7jETLprMal8YCGqnDQmhhFSbXddk3bmvOhafoNb1sZI6AxfxaQ1OB1QNinOn1W9h0Nbkjxy47O6UNi3GBgSCQpFrUXKB6j9gA8dV77b2+KKovPGnjr4lSRO18+p7cB9fanlF8skjMJtHO4HoW4H3afL0Wva2+gBXbHVKHJWAv0QIxNXHZBdRhkVD0xLrrNRYIm94mH+XYa2ePwLDwBUsLt4iaCiJ/tfO9uoSIOKnP2LR18S+RUYhQKG0Ni08rfi0ubR/cI+e1GEVMqAEuFov0mS7Vf3mu0jAZaVdopRYwvmPmVNPBAvYathY18SAam9EGPi7ZqAbC5pomX4pnjZ29wf/AuQIcFouFhsNi9BUIguCfJ4ZFEAQuYlgEQeDi5mERBMH/RQyLIAhcxLAIgsBFDIsgCBxM0xckZ8+njPye4gAAAABJRU5ErkJggg==" InformativeScreenshot="f1ec3cf18370493afd3b4b423a036317.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Search' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'demo.nopcommerce.com/ap…'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" TextString="[Url]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="150, 48, 1282, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'demo.nopcommerce.com/ap…'" FullSelectorArgument="&lt;ctrl name='nopCommerce demo store. Apple MacBook Pro 13-inch - Google Chrom*' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='nopCommerce demo store. Apple MacBook Pro 13-inch - Google Chrom*' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="6479c63d-be81-4d99-9fff-a560c285eb44" InformativeScreenshot="4f0acdef3d68a7faf385be4a6db29b1a.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='nopCommerce demo store. Apple MacBook Pro 13-inch - Google Chrom*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[Url.Contains(&quot;apple-macbook-pro-13-inch&quot;)]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Product Quantity" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="3" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/apple-macbook-pro-13-inch" CvElementArea="934, 574, 46, 46" CvTextArea="952, 590, 11, 14" CvTextArgument="2" CvType="Button" DesignTimeRectangle="936, 621, 45, 43" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'2'" FullSelectorArgument="&lt;webctrl id='product_enteredQuantity_4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='product_enteredQuantity_4' tag='INPUT' type='text' class='qty-input' aaname='' /&gt;" Guid="a239e0b0-347a-428f-b7fc-41c960aec3d1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAvCAYAAABKQCL3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADSSURBVGhD7dWxDcMgEIXhDEeVXcIuYRGLzGHJE1DbrSe4OIhIjky6O/RA75euQG78CWNuMkBjIVJK3c39tef5QfQUESgRgRIRKBGBEhEoEYESESjZI7Yo3jlx33lEWcsjrWwRBRDmsj5anvoQU8Q6+esLZ5iXuJW1QrY7UWsERN4dF2Qpa43aIuaQD/f5jGjUDlEAftL+N7VCGAI+2SOMPqFztojKPWGRKSJfbAeiNpow251oFBEoEYESESgRgRIRKBGBEhEo/UX0NhdEzw2AEHkDjGL/2xIayUwAAAAASUVORK5CYII=" InformativeScreenshot="7db3d13db32506959f3308644c76b8fc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Apple MacBook Pro 13-inch' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add to cart'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/apple-macbook-pro-13-inch" CvElementArea="981, 618, 148, 47" CvTextArea="1002, 635, 105, 14" CvTextArgument="ADD TO CART" CvType="Button" DesignTimeRectangle="981, 621, 149, 43" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Add to cart'" FullSelectorArgument="&lt;webctrl id='add-to-cart-button-4' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='add-to-cart-button-4' tag='BUTTON' type='button' class='button-1 add-to-cart-button' aaname='Add to cart' check:innerText='ADD TO CART' /&gt;" Guid="03eb04f8-83ee-4877-8b53-5a23b7a7094a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAAAvCAYAAADwz2jSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMSSURBVHhe7Z0xbhsxEEV1BJU6U46gQ+REPkU6l6lSyoVPoCaFq8ACjEiRGS25lD/JmaG81sgG9n/gAcaSuzs7fEurkhaBYZxDyRj3LDabTTgej+H7z1349uMPIVcBs1itVmEQ7dfvgziZkClgFsvlMqzX6/D3XxAnEzIFTJRs2M2GSJMJmQImSjYwRJpMyBQwlIy4gKFkxAUMJSMuYCgZcQFDyYgLGEpGXMBQMuIChpIRFzCUjLiAoWTEBQwlIy5gPkWy++d4u7B7emnHt8c02OQY7qu5d0+v41iV/SHcVXORfH811fntfV7Dw2N5TYvmflZ9+fnFOfuwTaNCoCa1hznvq38KmE+QLDVqtx8WrhUnNUgTqmxOPCYsRlpU4doSj4ewU5v+Eh72wrXiOcpLgozzwvO+OG7VF8dOvRnO227r8dS79rjcn0R6hm6tVwZze8myROMCNA1TJBtIC/AmlSbZWY5qcUUMyfTrn9DqP2PVoI1liXrjeCyjyaQd9wVzY8mweUojDclqIUwJrOsgqmTWgiai9KJEJwx5NdJulGrGv9/mWDWlMUpWv/2SCKYcZZP7O80Fi6zNu+R8q9ZLJT9Tv3SSULpkspQDM5OslUJ4+76UZB1JepJptUkIddQfD/Lzy9FqnZVk8sM2jfxSknXO70nWkxQQnyVeA2tod7K0g1l1zkmy2DAt0CRrcardxZRsuI42hqgytQta86HPZEV91g6Fgsg1xTrUe81Isnbrz4wNzotlSFYvqi7ZOxpryNDfKadKmOorn1muIQmU+6GJP/bwo724IpgbSaY1J1E0UpFM+regSVAuTAdzxxllqK81CtZduHFeLVpdny7jidiP3Dujj8U8ZCaSJUGMRcddYWxWG008IdruI2FKNtLU1JlfkEWFYH347MV5Gdz1rJc136eubSaSkfmBoWTEBQwlIy5gKBlxAUPJiAsYSkZcwFAy4gKGkhEXMJSMuIChZMQFDCUjLmAoGXEBEyXjd8aSa4OJkvHbr8m1wfB7/IkLGP4iCXEBw99WYtxDyRjnhPAfVTRJsmxEHzoAAAAASUVORK5CYII=" InformativeScreenshot="f1de46517b056bfe4ce8bafa6e3498d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Apple MacBook Pro 13-inch' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'The product'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" TextString="[addCartMessage]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/apple-macbook-pro-13-inch" CvType="AnyWordGroup" DesignTimeRectangle="8, 124, 1903, 46" DesignTimeScaleFactor="1" FriendlyName="'The product'" FullSelectorArgument="&lt;webctrl parentid='bar-notification' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='bar-notification' tag='DIV' type='' class='bar-notification success' aaname='' /&gt;" Guid="b13f234d-c830-42c4-9b78-567c2057f849" InformativeScreenshot="90aaf314e10d3c0704e653bd4f30ed75.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Apple MacBook Pro 13-inch' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[addCartMessage=&quot;The product has been added to your shopping cart&quot;]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_3" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/apple-macbook-pro-13-inch" CvType="CloseButton" DesignTimeRectangle="1872, 131, 32, 32" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='close' aaname='' /&gt;" Guid="b963750a-74fa-4565-ba90-26b3949ab1ec" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAChSURBVFhH7c7RCYAwDEXRzijOU+xGgs7UNSpPFPpRjUkUQ8mFoB+Fd8Iwx2LpwrhMxdKFcU0F93enw0FXOYjKQVQOouoHFGM8/ug4b8Ug9GSIg0EqELob5GKQGoRawxIMUoNyzvu3BkgxSA2qA0SDQf2CaogG9QqoBZCi1KC7YQlKBXoyyEWJQZwhzlsx6KscROUgKgdROYjKPsjKGQOlsgFWZHtwZ+sIRQAAAABJRU5ErkJggg==" InformativeScreenshot="f33353c358af7bbb2540d8e2c1f8bf8c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Apple MacBook Pro 13-inch' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Shopping Cart'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/cart" CvElementArea="1410, 80, 151, 45" CvTextArea="1448, 94, 94, 14" CvTextArgument="Shopping cart (3)" CvType="Button" DesignTimeRectangle="1449, 79, 74, 45" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Shopping cart'" FullSelectorArgument="&lt;webctrl parentid='topcartlink' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='topcartlink' tag='SPAN' type='' class='cart-label' aaname='Shopping cart' check:innerText='Shopping cart' /&gt;" Guid="8a79c112-c7bb-443a-8927-8653f7fb3fb3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE4AAAAxCAYAAAB03p8JAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJbSURBVGhD7ZtBkuIwDEW5dQ7hE8wuVF+CHCJcYJpNDsHWg2XZ+VZiBsQw0z31qXpVGFuy9SzCikPky/U6/Py8RPI8h+v1GsnzUJwTinNCcU4ozgnFOaE4JxTnhOKcUJwTinNCcU4ozgnFOaE4JxTnhOKcbMQtpxCHYaiE01Ln5mM7fhvLFMMwxnlv7h9ha2/EZWl44DmOIO+vifuC3BWXJofjXMcJkRmmuOh8OE0iUzoS10qXlE4F+edR4qeU28x182HHSfwYx1DiQ5wWzX1d4lQ+1zXjucy14DdpFQDxkiPXWT4PIcf8+NjGtl/VdMgmQYuILQWpqHzQbWfWHJqzmVNBOV8RkXNIPiuu7qOFajxearvOIPJLTWmfvCeepdnf7JNIa7sdl+ndgt0or9sUmpCxCpGC7Fwet/lURBpvxK3xdQ3uL3N2vGKL3gfj83uMeUBcCxbXBsNGVg7canvbN4w4PExXHMSv4rBDEj1xWwkV2UcbREFxmOuOuLQYnx8KHLwrDgtNyLjTcTDGS0nU8UPibHHbYgu26Exev1vPTq474vRQ2B2aoBTXFae3X+ZEQMkjotZDVDnlfZUKHfSQOHNesw/S1lX2MeKa+CfFJWSTW4KKHjLRF3ejaXvTYfirCBIk33GscTX3g+Lqxab44+2X2xSL5Esy+6isHD9DfVtxxUuJ/e0z7mVM4Yi9xZfAx8Pe/B/mW4vDLkr0uu0dvF/cfwrFOaE4JxTnhOKcUJwTinNCcU4ozgnFOaE4JxTnhOKcUJwTinNCcU4ozsnhcrlE8jz8v6rrFeMvE8V7ENwzv48AAAAASUVORK5CYII=" InformativeScreenshot="c42ccf4c81f8418f990f358709b4ed54.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Shopping Cart' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="1410, 80, 151, 45" CvTextArea="1448, 94, 94, 14" CvTextArgument="Shopping cart (3)" CvType="Button" DesignTimeRectangle="1527, 79, 15, 45" ElementType="Text" FriendlyName="'(3)'" FullSelectorArgument="&lt;webctrl class='cart-qty' parentid='topcartlink' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='cart-qty' parentid='topcartlink' tag='SPAN' type='' aaname='(3)' check:innerText='(3)' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABMAAAAxCAYAAAA4NJLxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADbSURBVEhL7ZfLDcMgDEDZmiFYgmwRhiALtFwYgqsbSBPMJ6RWOTrSk0DAwxjngICJn3i9HcxChBBgFiyjwzI6LKPDMjqNzC4S9JbbUh6o1XfnYErZpkEutm0HC3oXZkHsa7Dnui9I5sEoBcaXE05iNDg6v6qiH8kyb0ApAx4NZurIdjrzs6w4ViZGkPLWbNQe9ZKlRR3ZSRovhAPZXWQXcbxYPJJVOagjTWWCNxvmrHObuM7qnI1vM/J01IvHOju4q27Mb3/An7CMDsvosIwOy+gI5xzMYuJ7E+ADM1PXuhtP8OsAAAAASUVORK5CYII=" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'unchecked'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NCheck_3" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/cart" CvType="CheckBox" DesignTimeRectangle="1205, 768, 13, 13" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl id='termsofservice' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='termsofservice' tag='INPUT' type='checkbox' class='' aaname='I agree with the terms of service and I adhere to them unconditionally' /&gt;" Guid="a2bc46e2-62c7-4120-8394-2592b23c2b6a" InformativeScreenshot="1fa6b5325514a7a2c325914241a53535.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Shopping Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1205, 767, 313, 33" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='I agree with the terms of service and I adhere to them unconditi*' parentid='shopping-cart-form' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='I agree with the terms of service and I adhere to them unconditi*' parentid='shopping-cart-form' tag='LABEL' type='' class='' check:innerText='I agree with the terms of service and I adhere to them unconditionally' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Checkout'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/cart" CvElementArea="1378, 818, 162, 42" CvTextArea="1413, 830, 92, 16" CvTextArgument="CHECKOUT" CvType="Button" DesignTimeRectangle="1380, 820, 160, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Checkout'" FullSelectorArgument="&lt;webctrl id='checkout' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='checkout' tag='BUTTON' type='submit' class='button-1 checkout-button' aaname=' Checkout ' check:innerText='CHECKOUT' /&gt;" Guid="fe3d09cc-3a86-4fc3-a4b2-873da8808bcd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKQAAAAqCAYAAAA9D/DpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIxSURBVHhe7ZhBboMwEEV7vp6xp8iut8iiJ2CbVdVIUYgS17WBwmAMRkH8Vm+kJxHjDGP7ZRTxcr1eHYAKCAlSdEK+Hj4BdgMhQQqEBCkQEqRASJACIUEKhAQpEBKkQEiQAiFBCoQEKRASpPgzQr6dHm4Yd/du51V3P/5wxw8zHri4Y+1vf9XDz5moKptjWR3vX364vrk3M/56qF0VvzTKPc6bXsd0bs/HzZ397ZC7uc5HYg935g8I2RyiOYT2AAcHu0bI7vMcy+tIS9P+AGx97biRI6zFufPp0ptbIKS9l90bHeSFzB1AuNc/yA2FLKljPHdKxnzelGCl8zsQ8gnkNviHqk50lQ2ELKxjKM20jLN5PVZAhNyTsIkF/3O2ErKwjr404XqqpiV5zRyE3JH4/6xUyJmwQk7G73NL62ilOQYZ43VKoEV5jUgIuSPrhHx+h1wlZAhfSxUlST0HIcdICxk3cX8hS+uIQv7WEcVLiLIkr5kzL+TE+rN7o4O2kLlffOr+VkIW1jGWpnmWrW0ur8fmCnJPCZlbP0I+h1xHiJ2o12G2EtJTUkd6bvo9Zi5vUtiwxnRXXS2rEPJC/p8X455Qn4/BM9vuaSRr5toX4918m7+ZP9ltEfK5xC7Uj0SXWCNkLhKyLqkj1/VagW3ubryLvDzjOmZkQ0iAchASpEBIkAIhQQqEBCkQEqRASJACIUEKhAQpEBKkQEiQAiFBCoQEKRASpBgJCaAAQoIQV/cNblU4iAQBB0EAAAAASUVORK5CYII=" InformativeScreenshot="bf64db599759cd2f1fbf0819586769d4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Shopping Cart' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetUrl CurrentUrl="[CheckoutUrl]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="388,87" sap2010:WorkflowViewState.IdRef="NGetUrl_1" Version="V3" />
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[CheckoutUrl.Contains(&quot;checkout&quot;)]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_4" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+            <uix:NSelectItem DisplayName="Select Item 'Country'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="Benin" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="50">
+                  <x:String>Select country</x:String>
+                  <x:String>United States</x:String>
+                  <x:String>Afghanistan</x:String>
+                  <x:String>Albania</x:String>
+                  <x:String>Algeria</x:String>
+                  <x:String>American Samoa</x:String>
+                  <x:String>Andorra</x:String>
+                  <x:String>Angola</x:String>
+                  <x:String>Anguilla</x:String>
+                  <x:String>Antarctica</x:String>
+                  <x:String>Antigua and Barbuda</x:String>
+                  <x:String>Argentina</x:String>
+                  <x:String>Armenia</x:String>
+                  <x:String>Aruba</x:String>
+                  <x:String>Australia</x:String>
+                  <x:String>Austria</x:String>
+                  <x:String>Azerbaijan</x:String>
+                  <x:String>Bahamas</x:String>
+                  <x:String>Bahrain</x:String>
+                  <x:String>Bangladesh</x:String>
+                  <x:String>Barbados</x:String>
+                  <x:String>Belarus</x:String>
+                  <x:String>Belgium</x:String>
+                  <x:String>Belize</x:String>
+                  <x:String>Benin</x:String>
+                  <x:String>Bermuda</x:String>
+                  <x:String>Bhutan</x:String>
+                  <x:String>Bolivia</x:String>
+                  <x:String>Bosnia and Herzegowina</x:String>
+                  <x:String>Botswana</x:String>
+                  <x:String>Bouvet Island</x:String>
+                  <x:String>Brazil</x:String>
+                  <x:String>British Indian Ocean Territory</x:String>
+                  <x:String>Brunei Darussalam</x:String>
+                  <x:String>Bulgaria</x:String>
+                  <x:String>Burkina Faso</x:String>
+                  <x:String>Burundi</x:String>
+                  <x:String>Cambodia</x:String>
+                  <x:String>Cameroon</x:String>
+                  <x:String>Canada</x:String>
+                  <x:String>Cape Verde</x:String>
+                  <x:String>Cayman Islands</x:String>
+                  <x:String>Central African Republic</x:String>
+                  <x:String>Chad</x:String>
+                  <x:String>Chile</x:String>
+                  <x:String>China</x:String>
+                  <x:String>Christmas Island</x:String>
+                  <x:String>Cocos (Keeling) Islands</x:String>
+                  <x:String>Colombia</x:String>
+                  <x:String>Comoros</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/onepagecheckout#opc-billing" CvElementArea="773, 338, 405, 43" CvTextArea="785, 352, 36, 13" CvTextArgument="Benin" CvType="InputBox" DesignTimeRectangle="775, 339, 400, 40" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Benin'" FullSelectorArgument="&lt;webctrl id='BillingNewAddress_CountryId' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='BillingNewAddress_CountryId' tag='SELECT' type='' class='valid' aaname='Country:' /&gt;" Guid="baa79814-8bc5-48db-b956-48ce127fbbab" InformativeScreenshot="079c54e57bd50a5f7abb27eda8d52e22.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Checkout' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Country:" CvType="Text" DesignTimeRectangle="390, 351, 375, 16" ElementType="Text" FriendlyName="'Country'" FullSelectorArgument="&lt;webctrl aaname='Country:' parentid='billing-new-address-form' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Country:' parentid='billing-new-address-form' tag='LABEL' type='' class='' check:innerText='Country:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAUCAYAAABs650wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG0SURBVHhe7drBbYMwFIDhDscuuXiJTgCD4D0ixmALTq79DPHDmMSqSqrAf/ikEgykl9/G7dc0TQ4AcG7EHgAugNgDwAUQewC4AGIPABdA7AEgd+9c0zRK54bSuEOMzprGdffSud8j9gCgDO027mNv/GfG2XE99hjEHgCOJSv68ipeJoF2UJ8NrlOrf9OPj3MyORjrxmzsEvBwL9Pb1fXxXAz9+p7h2s5ZmXD857dvd8snHv29d34HYg8As23Q98R4p8Cvj2tir98U4pvDEuh8ZR+vTd8rnteTS5w80nEJsQcAsY3onm3MPbWiroq9nlRG68wj/uXYp+P8/uH86y0mYg8Aoj72xTcACfZ7Yq+fJT/nE08BsQeAWTHiBf8eezUmPKtmgiL2ALB48gdaHfBtzL03buME8ozW+rGvt3ACYg8AioQ4C76EdRXcGOC0os6OJfwpwvn1fxH7eI2/T8UWTkDsASCzxDkprfZjhJcx+VZKnDSWc8Mq4M9jr54vY3ZiP08Kmy0c/vUSAM4kxL5uCycg9gDwicLbQOUWTkDsAeDDxC2i+lV9QOwB4AKIPQCc3uR+ADqBxgGbwLAOAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'City'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="Berlin" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/onepagecheckout#opc-billing" CvType="InputBox" DesignTimeRectangle="775, 483, 400, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT BillingNewAddress…'" FullSelectorArgument="&lt;webctrl id='BillingNewAddress_City' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='BillingNewAddress_City' tag='INPUT' type='text' class='' aaname='City:' /&gt;" Guid="c473980e-1327-42ce-aed5-375042725c81" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAAsCAYAAABCK04MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADOSURBVHhe7dWxDYAwAMAw/v+xh3QqGwswVM1oS7kh15xzSZJ0mqFIkpKeoYwxJEna7nMoALDDUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgIShAJAwFAAShgJAwlAASBgKAAlDASBhKAAkDAWAhKEAkDAUABKGAkDCUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgMTvUCRJ2u01FEmSTjIUSVLQXDfqd+BnuMxXZAAAAABJRU5ErkJggg==" InformativeScreenshot="2c8da8d0939f14ee91793eaf9ca29692.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Checkout' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="City:" CvType="Text" DesignTimeRectangle="390, 495, 375, 16" ElementType="Text" FriendlyName="'City'" FullSelectorArgument="&lt;webctrl aaname='City:' parentid='billing-new-address-form' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='City:' parentid='billing-new-address-form' tag='LABEL' type='' class='' check:innerText='City:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAUCAYAAABs650wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFCSURBVHhe7drBbYMwGIDRDsc47BIGCeeuEDEGW3ByY2iC28aEtJUjwjs8CQTy8bPzh7dhGAIAr03sAXZA7AF2QOwBdkDsAXZA7AGe4dSEqqoSTeiS5/2xDlXdhn6870JT1aHt5+ePEnuAwrpDJu7ZoIs9wLaMJ/qvob8YN4FDN17PJ/sY+vkXQPPehvp7+NM1M+uLPUBBadCX5Mc4fWjrKtTH/vpuXDO9v0XsAYr5GeqcpZn9b+b5Yg9QzP/EfujjKOdzVBOvr+/liT1AQX8f40TTptGcpvfWbB5iD1DSwh+0aeDvjWrG54f2HP37I5xI7AEKy396OZ3Wr/cLsZ9GOed1VoxwIrEHeIJL3Gc34p+EfNog0nl/Zv7v00uAVxJjv26EE4k9wBat/ArnQuwBNmYa6aw/1UdiD7ADYg/w8obwAbrkU9ncU+cAAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address 1'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="108 ddd test" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/onepagecheckout#opc-billing" CvType="InputBox" DesignTimeRectangle="775, 538, 400, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT BillingNewAddress…'" FullSelectorArgument="&lt;webctrl id='BillingNewAddress_Address1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='BillingNewAddress_Address1' tag='INPUT' type='text' class='' aaname='Address 1:' /&gt;" Guid="de942086-9ca2-45b3-afa6-3d687063fd79" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAAsCAYAAABCK04MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADOSURBVHhe7dWxDYAwAMAw/v+xh3QqGwswVM1oS7kh15xzSZJ0mqFIkpKeoYwxJEna7nMoALDDUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgIShAJAwFAAShgJAwlAASBgKAAlDASBhKAAkDAWAhKEAkDAUABKGAkDCUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgMTvUCRJ2u01FEmSTjIUSVLQXDfqd+BnuMxXZAAAAABJRU5ErkJggg==" InformativeScreenshot="086e4104dcb7c174308037af3c62f8ca.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Checkout' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Address 1:" CvType="Text" DesignTimeRectangle="390, 550, 375, 16" ElementType="Text" FriendlyName="'Address 1'" FullSelectorArgument="&lt;webctrl aaname='Address 1:' parentid='billing-new-address-form' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Address 1:' parentid='billing-new-address-form' tag='LABEL' type='' class='' check:innerText='Address 1:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAUCAYAAABs650wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHpSURBVHhe7dnNbYQwEEDhFEc57gUXsvSxogy64OT4B5vBHghaKYqC3+E7hAHC6Rm8X+u6OgDAsxF7AOgAsQeADhB7AOgAsQeADhB7AA+2uMkMbhism9X50fIybjCTW5RZMI/+XuOszv7G7Oxg3LRosyNiD+C53tbH2zrrg29ei36O8L9iH0IfFjJiD6BzIc4h8ucRz8FM0bRjdd4yOVPmftEQsQ/3NK+pXG/f6Zr4v8o1xxB/OqvFRcefZ0brn686NyxwypcMsQfwUGKLI0a7DmgKfXnjz2HPsd/+zhFPEfVzEXs12HKxkOGtI3x3ppj9IrM/4/XCkBF7AI9Uh7fZglGCKq9pwu3Je7Rzff88f11cBvyHuJ8i9gD6ln6YLW/lQRVULebxnO1Yszh48Zqz2OcvA0X6esg/FieHZ7ucXSD2ALoWw77HU8rbNr8T+3vhjfeOz6N/CZzNGsQeQM+0UJfjOdDK1okMuLYYyPu28/QbwO238u1tvvxmcHsmEHsA/bqI7iGOVVDjTCwG9X3y18Jp7LdjhwVE3KNeXOSzXM3yMQ2xB9CrNrjStjde3vpTjNO2iXVTHfC8AAT++HT5Zp/s2zCJXHQ+nZ3SYq98sQTEHgA6QOwBoAPEHgA6QOwBoAPEHgAeb3Xf1kJ2AaW9E4IAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Zip / postal code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="123456" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/onepagecheckout#opc-billing" CvType="InputBox" DesignTimeRectangle="775, 648, 400, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT BillingNewAddress…'" FullSelectorArgument="&lt;webctrl id='BillingNewAddress_ZipPostalCode' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='BillingNewAddress_ZipPostalCode' tag='INPUT' type='text' class='' aaname='Zip / postal code:' /&gt;" Guid="2f4f2dac-8be0-4870-a8b1-1f61b3d643eb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAAsCAYAAABCK04MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADOSURBVHhe7dWxDYAwAMAw/v+xh3QqGwswVM1oS7kh15xzSZJ0mqFIkpKeoYwxJEna7nMoALDDUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgIShAJAwFAAShgJAwlAASBgKAAlDASBhKAAkDAWAhKEAkDAUABKGAkDCUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgMTvUCRJ2u01FEmSTjIUSVLQXDfqd+BnuMxXZAAAAABJRU5ErkJggg==" InformativeScreenshot="d7ef87b02a07ea3b7221f8212a6d184d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Checkout' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Zip / postal code:" CvType="Text" DesignTimeRectangle="390, 660, 375, 16" ElementType="Text" FriendlyName="'Zip / postal code'" FullSelectorArgument="&lt;webctrl aaname='Zip / postal code:' parentid='billing-new-address-form' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zip / postal code:' parentid='billing-new-address-form' tag='LABEL' type='' class='' check:innerText='Zip / postal code:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAUCAYAAABs650wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALOSURBVHhe7ZjLkcIwDEC3OMpJL6SQpQ+GMtIFJ2/8w5Ysm0BgmFne4c0QFNuyD09yfq7XqwMAgP8NsgcA+AKQPQDAF4DsAQC+AGQPAPAFIHsAeIKLmw8HdzCZ3WV9Z/md3GE6uaUZu5XFnabJnRYr9ibO80M5X47rfo8XM/ZK9p8lsgeAlxELwPS7GLEnWE5u2im4h0H2AAAjfBe+iq8SUi2o8HuVYpBjugHMZz2HxI+xC4cvKmvHf16LQb5NNCKUNw85j7qVZFl70d/+j7cT/3+ds3g/xwayl2PLnJ5wJp2YzHFy81HLvrMHT9iHng/ZA8ALiFIzZFbLfpXSTbq+a1+f+8IffcLJolNCvskwxovg6+dYlEpMPavOXs6b4lXeI9nX+9fP8TxK/vJZ5Z/OSu+vnJ3ekw2yB4B9KAFmGrnV0lwZiTIKre1OS0ytF4QYi4O1Vul274hRyb5Frt3fg5HjMFbldcu1xJuz1GuG/ffOK4LsAeB5UtdpyfOeoEwpZ7zwhoVAd/1FoKaAaxmm4hSwioKRU8g1j0nr+P+7sq+Kz9aYn8ufo3kuVV5hzSqXArIHgLcQu9GelPfI3gvN7oo9O2Uv/kuizO8r2RfJ57GyK/+Y7DtnPgLZA8BTBOkMuslG9kpgfWl5oY66VCncQCXQrix7c9YxIftYzGTR2Sh7K8dh7MHPOHp/G0D2APA4QUidzjXRCKoW3L3OdyizKMtaeFK6MV4+LdXP7Td7MdaQfXk33WSqffRlb0i5kng8jyJ0+azWDWdV71fvz1jLANkDwMMEyXkBmbQddvw9uznJ0mN3vfHdWmQtqTM+enmm+RrRpYKQEPNleWbE2DwuFSL17nxOwk+CH8neI89JFrco+ByTnbzMf3YnLfPRHoybgQfZA8Db2dJ5bifJvlMswAbZA8DbQfafB9kDwNtB9p8H2QMAfAHIHgDg33N1f0yBiJjCb2T+AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Phone number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Text="3312393829" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/onepagecheckout#opc-billing" CvType="InputBox" DesignTimeRectangle="775, 703, 400, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT BillingNewAddress…'" FullSelectorArgument="&lt;webctrl id='BillingNewAddress_PhoneNumber' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='BillingNewAddress_PhoneNumber' tag='INPUT' type='tel' class='' aaname='Phone number:' /&gt;" Guid="9cfa45f1-5fa5-42da-b595-b150441334e0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAAsCAYAAABCK04MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADOSURBVHhe7dWxDYAwAMAw/v+xh3QqGwswVM1oS7kh15xzSZJ0mqFIkpKeoYwxJEna7nMoALDDUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgIShAJAwFAAShgJAwlAASBgKAAlDASBhKAAkDAWAhKEAkDAUABKGAkDCUABIGAoACUMBIGEoACQMBYCEoQCQMBQAEoYCQMJQAEgYCgAJQwEgYSgAJAwFgMTvUCRJ2u01FEmSTjIUSVLQXDfqd+BnuMxXZAAAAABJRU5ErkJggg==" InformativeScreenshot="645112c7d57422047656e555a4803215.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Checkout' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Phone number:" CvType="Text" DesignTimeRectangle="390, 715, 375, 16" ElementType="Text" FriendlyName="'Phone number'" FullSelectorArgument="&lt;webctrl aaname='Phone number:' parentid='billing-new-address-form' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Phone number:' parentid='billing-new-address-form' tag='LABEL' type='' class='' check:innerText='Phone number:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAUCAYAAABs650wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI0SURBVHhe7drNjaswFEDhKS7l0EsoJPQRUQZdZOXh+gdfG+MgBSIUn8W3IAZjWBznZd7f6/UyAIDfRuwBoAHEHgAaQOwBoAHEHgAaQOwBnGw0/e1mbgX9Mz0nHrdjvM/v4j4Wx45E7AGcTELemWHKPp8G0y2BJ/alsSMRewAn24j9TELXPSZ/zhz7e6+++fdmTM6fzNCFsSyQduPozfDo4ng3mElf/9Rz1zcWt67Brml9/npjmuS+4X5+LaO+n6zVb27us/hsLva9utf6Xdn5i+OyFvXcsgZ73/zdEXsAp9sf+xhoH/Yl6G+OQ0iXcTefm3s+zgNozy+vSdgAq3EX23D9ntgX1rZc79Ye1ubupeaza83urTeu5Fn8e1ueexuxB3CyjdgnUXsT0NK3VR3sQrzdN2aJoIurnlvY+TciGa/1nyXz74m9Xksa9+V8P//qXsn55Xcn1+hNMn+2EmIP4GQuSPFniChGqh7QJKYLFcJq7Lfv/83Yr85XsdcbQfjMjtu51HoVYg/gYlSUi+OiHtAjYr8niMG1Yl97d/ufjdgDOJmKcnFcvAnoAT/j5EGt+Xbsk3utfsapxZzYA7iMA2LvAxijmB1XYz8fZ3/0fLcB1GOfr8Wt/aPYq/PtmNrY8uP0XRF7AJdxROyFj6yEVWzG2MmD7aIZr69906/HPhyHueYQy2byQezT/+a5flduQ4jiXIXYl/4VNCP2ANAAYg8ADSD2ANAAYg8ADSD2APDzXuYfkDnFb0W4X+IAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/onepagecheckout#opc-billing" CvElementArea="888, 870, 143, 42" CvTextArea="919, 884, 80, 14" CvTextArgument="CONTINUE" CvType="Button" DesignTimeRectangle="890, 873, 140, 37" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Continue'" FullSelectorArgument="&lt;webctrl name='save' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl name='save' tag='BUTTON' type='button' class='button-1 new-address-next-step-button' aaname='Continue' check:innerText='CONTINUE' /&gt;" Guid="60787a46-ae1e-4392-8df2-8df632675fb3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAApCAYAAADag6AFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJISURBVHhe7ZhBTuQwEEXnfHNGTjE7bsGCE/SWFaIlpEbgiWP/jl2xQ6jQURDvS0+iE8dxqh4xzZ9AyIYgENmUq0B//z0DrEZBIHChIBC4UBAIXCgIBC4UBAIXCgKBCwWBwIWCQOBCQSBwoSAQuFAQCFwoCAQulGMJ9PgWznk9yunUGNcZe356NeMu4RRPXN7CXXU88hoeLrom/byYl4u5ZpojhPdwP5v/Ody/6Lr4Oa2l/Tx23rzuXprPsy/KYQQaix0+wsNjcTxLYsW4e/qIg00zcjOr4k6NmDfONq3g9D5c0ZKiJ1B7nq0CdX95DoByDIHGhhl5eudGqTpj1VDTtPMlCmeF+D6B0vzzNSHQTtSFXubTsVXz1QgrVuQbBRo+j+syWwsC7cJCI2esGVsWv/g5b4dTUxbmcgike5XzIdAupOKtK9aasR2BhnPpbyeJYZtW4BJo+DxeN21lWwXqZV2tbovye95A47l0fWrqwlxegQbKrYw30E7Uhbak4qqYy2MHquY3GnHdym4jkO4Zj9VrrZ+jxp5DoK+x9M3KbAueb2G2EWNjhznOs+ZnNgmkrTLNX8oe79u83+yZEOjLqKmVGPlt0W6QLXCWp/F/oHkj0vGYWwh0XUtM+bYc5+2su3qrIpCPXOAy/SJOEijzRi40It/rNgINZPlrMYrjZeyYxrPVaa1tX5RjCQQ/BgWBwIWCQOBCQSBwoSAQuFAQCFwoCAQuFAQCFwoCgQsFgcCFgkDgQkEgcKEgELhQrgIR4gkCkQ0J4T8LPqkWThlbEwAAAABJRU5ErkJggg==" InformativeScreenshot="491b93f0e7f66e7e1c1dfed332177e30.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Checkout' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/onepagecheckout#opc-shipping_method" CvElementArea="888, 476, 143, 41" CvTextArea="919, 489, 81, 14" CvTextArgument="CONTINUE" CvType="Button" DesignTimeRectangle="890, 478, 140, 37" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Continue'" FullSelectorArgument="&lt;webctrl parentid='shipping-method-buttons-container' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='shipping-method-buttons-container' tag='BUTTON' type='button' class='button-1 shipping-method-next-step-button' aaname='Continue' check:innerText='CONTINUE' /&gt;" Guid="84841eed-c13b-42fb-b289-69bd92ee4e42" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAApCAYAAADag6AFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJISURBVHhe7ZhBTuQwEEXnfHNGTjE7bsGCE/SWFaIlpEbgiWP/jl2xQ6jQURDvS0+iE8dxqh4xzZ9AyIYgENmUq0B//z0DrEZBIHChIBC4UBAIXCgIBC4UBAIXCgKBCwWBwIWCQOBCQSBwoSAQuFAQCFwoCAQulGMJ9PgWznk9yunUGNcZe356NeMu4RRPXN7CXXU88hoeLrom/byYl4u5ZpojhPdwP5v/Ody/6Lr4Oa2l/Tx23rzuXprPsy/KYQQaix0+wsNjcTxLYsW4e/qIg00zcjOr4k6NmDfONq3g9D5c0ZKiJ1B7nq0CdX95DoByDIHGhhl5eudGqTpj1VDTtPMlCmeF+D6B0vzzNSHQTtSFXubTsVXz1QgrVuQbBRo+j+syWwsC7cJCI2esGVsWv/g5b4dTUxbmcgike5XzIdAupOKtK9aasR2BhnPpbyeJYZtW4BJo+DxeN21lWwXqZV2tbovye95A47l0fWrqwlxegQbKrYw30E7Uhbak4qqYy2MHquY3GnHdym4jkO4Zj9VrrZ+jxp5DoK+x9M3KbAueb2G2EWNjhznOs+ZnNgmkrTLNX8oe79u83+yZEOjLqKmVGPlt0W6QLXCWp/F/oHkj0vGYWwh0XUtM+bYc5+2su3qrIpCPXOAy/SJOEijzRi40It/rNgINZPlrMYrjZeyYxrPVaa1tX5RjCQQ/BgWBwIWCQOBCQSBwoSAQuFAQCFwoCAQuFAQCFwoCgQsFgcCFgkDgQkEgcKEgELhQrgIR4gkCkQ0J4T8LPqkWThlbEwAAAABJRU5ErkJggg==" InformativeScreenshot="9f7b2e6fc9149301385473845fec1598.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Checkout' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/onepagecheckout#opc-payment_method" CvElementArea="888, 453, 143, 41" CvTextArea="919, 466, 81, 14" CvTextArgument="CONTINUE" CvType="Button" DesignTimeRectangle="890, 455, 140, 37" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Continue'" FullSelectorArgument="&lt;webctrl name='save' parentid='payment-method-buttons-container' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl name='save' parentid='payment-method-buttons-container' tag='BUTTON' type='button' class='button-1 payment-method-next-step-button' aaname='Continue' check:innerText='CONTINUE' /&gt;" Guid="777032e2-f4c0-4cad-b773-c0e5b9bbc8c3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAApCAYAAADag6AFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJISURBVHhe7ZhBTuQwEEXnfHNGTjE7bsGCE/SWFaIlpEbgiWP/jl2xQ6jQURDvS0+iE8dxqh4xzZ9AyIYgENmUq0B//z0DrEZBIHChIBC4UBAIXCgIBC4UBAIXCgKBCwWBwIWCQOBCQSBwoSAQuFAQCFwoCAQulGMJ9PgWznk9yunUGNcZe356NeMu4RRPXN7CXXU88hoeLrom/byYl4u5ZpojhPdwP5v/Ody/6Lr4Oa2l/Tx23rzuXprPsy/KYQQaix0+wsNjcTxLYsW4e/qIg00zcjOr4k6NmDfONq3g9D5c0ZKiJ1B7nq0CdX95DoByDIHGhhl5eudGqTpj1VDTtPMlCmeF+D6B0vzzNSHQTtSFXubTsVXz1QgrVuQbBRo+j+syWwsC7cJCI2esGVsWv/g5b4dTUxbmcgike5XzIdAupOKtK9aasR2BhnPpbyeJYZtW4BJo+DxeN21lWwXqZV2tbovye95A47l0fWrqwlxegQbKrYw30E7Uhbak4qqYy2MHquY3GnHdym4jkO4Zj9VrrZ+jxp5DoK+x9M3KbAueb2G2EWNjhznOs+ZnNgmkrTLNX8oe79u83+yZEOjLqKmVGPlt0W6QLXCWp/F/oHkj0vGYWwh0XUtM+bYc5+2su3qrIpCPXOAy/SJOEijzRi40It/rNgINZPlrMYrjZeyYxrPVaa1tX5RjCQQ/BgWBwIWCQOBCQSBwoSAQuFAQCFwoCAQuFAQCFwoCgQsFgcCFgkDgQkEgcKEgELhQrgIR4gkCkQ0J4T8LPqkWThlbEwAAAABJRU5ErkJggg==" InformativeScreenshot="9f7b2e6fc9149301385473845fec1598.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Checkout' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/onepagecheckout#opc-payment_info" CvElementArea="888, 481, 143, 41" CvTextArea="919, 494, 81, 14" CvTextArgument="CONTINUE" CvType="Button" DesignTimeRectangle="890, 483, 140, 37" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Continue'" FullSelectorArgument="&lt;webctrl parentid='payment-info-buttons-container' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='payment-info-buttons-container' tag='BUTTON' type='button' class='button-1 payment-info-next-step-button' aaname='Continue' check:innerText='CONTINUE' /&gt;" Guid="5b75fba9-9e3b-479e-9b68-8b89296eb57f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAApCAYAAADag6AFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJISURBVHhe7ZhBTuQwEEXnfHNGTjE7bsGCE/SWFaIlpEbgiWP/jl2xQ6jQURDvS0+iE8dxqh4xzZ9AyIYgENmUq0B//z0DrEZBIHChIBC4UBAIXCgIBC4UBAIXCgKBCwWBwIWCQOBCQSBwoSAQuFAQCFwoCAQulGMJ9PgWznk9yunUGNcZe356NeMu4RRPXN7CXXU88hoeLrom/byYl4u5ZpojhPdwP5v/Ody/6Lr4Oa2l/Tx23rzuXprPsy/KYQQaix0+wsNjcTxLYsW4e/qIg00zcjOr4k6NmDfONq3g9D5c0ZKiJ1B7nq0CdX95DoByDIHGhhl5eudGqTpj1VDTtPMlCmeF+D6B0vzzNSHQTtSFXubTsVXz1QgrVuQbBRo+j+syWwsC7cJCI2esGVsWv/g5b4dTUxbmcgike5XzIdAupOKtK9aasR2BhnPpbyeJYZtW4BJo+DxeN21lWwXqZV2tbovye95A47l0fWrqwlxegQbKrYw30E7Uhbak4qqYy2MHquY3GnHdym4jkO4Zj9VrrZ+jxp5DoK+x9M3KbAueb2G2EWNjhznOs+ZnNgmkrTLNX8oe79u83+yZEOjLqKmVGPlt0W6QLXCWp/F/oHkj0vGYWwh0XUtM+bYc5+2su3qrIpCPXOAy/SJOEijzRi40It/rNgINZPlrMYrjZeyYxrPVaa1tX5RjCQQ/BgWBwIWCQOBCQSBwoSAQuFAQCFwoCAQuFAQCFwoCgQsFgcCFgkDgQkEgcKEgELhQrgIR4gkCkQ0J4T8LPqkWThlbEwAAAABJRU5ErkJggg==" InformativeScreenshot="9f7b2e6fc9149301385473845fec1598.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Checkout' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Confirm'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/onepagecheckout#opc-confirm_order" CvElementArea="888, 910, 143, 41" CvTextArea="923, 923, 72, 14" CvTextArgument="CONFIRM" CvType="Button" DesignTimeRectangle="890, 912, 140, 37" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Confirm'" FullSelectorArgument="&lt;webctrl parentid='confirm-order-buttons-container' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='confirm-order-buttons-container' tag='BUTTON' type='button' class='button-1 confirm-order-next-step-button' aaname='Confirm' check:innerText='CONFIRM' /&gt;" Guid="c25683b5-bcba-4fea-b878-38373a3250b1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAApCAYAAADag6AFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJzSURBVHhe7ZhLbupAEEWzvqyRVWTGLhiwAk8ZIZCQjKDTv2v3p9o4ZSys6F7pDLDLdtF1aOe9L8MwC0KBmEUZBPr+ORMyG4QCERUIBSIqEApEVCAUiKhAKBBRgVAgogKhQEQFQoGICoQCERUIBSIqEApEVCAUiKhANi5Qb7rYH3I93YQ6y/FurrEGqWtv5tC7Mw+zz44H9hd76tLHz/Wz03SddM3Z7E7PUCAlqRt6yY4VdA9/GZ61JZDNCoRB5IsXh1osulwbB9Tfza48ZiOJKAn0aniiQNkzQdl76OXaPxs/Clvvzs3o4RMg2xQo7ibiwpXn/OenORyTmoHyVz4OzQjXrCuQxe8o2P1iL6e7FUWot7X+3IwePgGySYEmh1BQDrBCHNotXFc8Y22Bwk4p95I/x51zgs/r4RMgmxTopRQD4xDk8450CGl9OJ5eu65A5fOSXpzk6fd1u6q/BwVS4YYyLQUIQ5he4JZA9rPfncZXmSSQlLZ02GXk5N+plHn8w97dYzxOgf5MOZQ2hRAiEwJZ/LPijiEJ9Gp4okDZDhRFrL5P3ou7z9gjpKZAKtqvgYBb7HThJ2Vr/A001oQhuWPrCGTBfzFkfRa94DU2vL5cDQVSMrFw7/hXWCYQXjv2tZHVvlEgHM/uV/binvcwB1uXH6NAKuoFd4QFzX/JrdooTzZMWaCh1mUlgep+yl7QQ/pjoEDLwNafpB4+iHIlaYki3qN6zbxbIIt/naK+7qW+lgKRfwpCgYgKhAIRFQgFIioQCkRUIBSIqEAoEFGBUCCiAqFARAVCgYgKhAIRFQgFIioQCkRUIINADKMJBWIWxJhfTiuaK7ARKL4AAAAASUVORK5CYII=" InformativeScreenshot="16e357f81dc737110651d8c39c32fb4f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Checkout' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Your order'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" TextString="[ProductOrderMessage]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/checkout/completed" CvType="AnyWordGroup" DesignTimeRectangle="360, 477, 1200, 23" DesignTimeScaleFactor="1" FriendlyName="'Your order'" FullSelectorArgument="&lt;webctrl class='title' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='title' tag='DIV' type='' aaname='' /&gt;" Guid="157b3375-0f1e-40ab-b067-44ffc5bcd452" InformativeScreenshot="ba3db246a024634d3efd9ae86854fc8e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Checkout' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Your order has been successfully processed!" CvType="Text" DesignTimeRectangle="761, 477, 397, 22" ElementType="Text" FriendlyName="'Your order'" FullSelectorArgument="&lt;webctrl tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='STRONG' type='' class='' aaname='Your order has been successfully processed!' check:innerText='Your order has been successfully processed!' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[ProductOrderMessage=&quot;Your order has been successfully processed!&quot;]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_7" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click here'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/checkout/completed" CvTextArgument="Click here for order details." CvType="Text" DesignTimeRectangle="876, 571, 167, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Click here'" FullSelectorArgument="&lt;webctrl aaname='Click here for order details.' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Click here for order details.' tag='A' type='' class='' check:innerText='Click here for order details.' /&gt;" Guid="daae4658-96cd-48c7-b7ec-035e5bac844c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKsAAAAUCAYAAADydM25AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM7SURBVGhD7VhLbmMhEJzzzXFyGB9kvMraeyvrnCDKbmIlUlYMNDR0dfN59nM0RqIklMcDqqu7y8TJL7ewMAmWWRemwTLrwjRYZl2YBsusC9OgYtYvd/jz1/0W4/CalghxPb6Tz328nDzX6SvNetjO+WN4veTcn87f6eX/xfb63YZr+N/OH1dowX7uyQPNmpoERnn/dE/QtNvMNJNZg9ZHMSljXrMi7mTWjknIxBf3QhO5z54hMf5dHHxGi/x2x2dcL0icp3K72X1xT16XyYcP1/OnO7KOtEYFzmc+3PGdXiuwLh6YM78HIzfiaWB8mU/gvrgjr3uut/A6XRK8/6CbLG7/MHQPDmc+38j1Rn7Ig7WaurUvN/ABaBhfEMWsYMgeZHAUQonkBHBeRKbEGk3NxtCFyPsxJq/nRFMBZOJa1yjXoFUXuzmvxNOIDS7xcJ7ylfVInDlHNg7v0fppfzEl1brXy538pD/rtf2M+fF+7Ffxge6jnltks5qGNiFJW88WLJJ+duNYHqkNC5VAxUzFVYWNfPZ2QUMi5Fq1LrKZJp5GrS7yA9bPl1GaHM/qOsu6lL117OWXz1VATTC/EqdWlz7uZ9ZB00ik3zu+7vvNkzw4GuaheW3/NrOW4goQ50azNtZLDJtvLWYxSNxfy4fPVDUL7OVvmZV48/6RWROP4u7hfl8DBk0jkcFwo+aq5AKMWXuJaf5hPIsQ49HNKvdrjGq0l1+blfj8mXzZQc7IV9XGX0P8aF0gAdv+wGoGbz1bSJH03LzFLY80q3yuwpijr6uGoI+LVo33AF8Dek2tGkJgLz+dz/xBv8r/WrMmjHorzOqRHA6FpcAygAyOQkww0VQUGc/VC4KcAchrz8J6xTy0Dr81bAyJoLXw63hqPjSrjY/zmhb1jm8erh/NZUw02Mise/lJf9UPAXF+/R9Y4w8JmjWAzSlGIQyQQXTAJCafLQmbApqCMCwnmDFAazRrlhd16ZwQYS8WLWris7C2wawB0aDMseGDI3P0+dG/xkT9kA81mVrXsIO/nE15sNlphFrEnOIZzA+0wTnx3sP03MOadWHhQbHMujANllkXpsEy68I0WGZdmATO/QPA4ju764GQlQAAAABJRU5ErkJggg==" InformativeScreenshot="3934828b3c0d9dcb02c2465e61cb2037.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Checkout' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Order information'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" TextString="[OrderHeader]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/orderdetails/1032" CvType="AnyWordGroup" DesignTimeRectangle="370, 408, 1180, 45" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Order information'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' /&gt;" Guid="923b0f49-f300-4d99-911a-3b92f12574eb" InformativeScreenshot="231ec81f8fdea816a4c8bb96541b8dbc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Order Details' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[OrderHeader=&quot;Order information&quot;]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_8" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+            <uix:NGetText DisplayName="Get Text 'Order Status'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" TextString="[OrderStatus]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/orderdetails/1032" CvType="AnyWordGroup" DesignTimeRectangle="979, 627, 60, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'chrome.exe nopCommerce'" Guid="6c459253-f46e-4665-8bec-4b80b3fd937c" InformativeScreenshot="f6aa6304e7e20dd2f2ccd310c90e1a06.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Order Details' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Order Status:" CvType="Text" DesignTimeRectangle="879, 627, 96, 15" ElementType="Text" FriendlyName="'Order Status'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[OrderStatus=&quot;Pending&quot;]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_9" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+            <uix:NTakeScreenshot DisplayName="Take Screenshot 'US DollarEuroMy'" FileName="screenshot.png" FileNameMode="DateTime" sap:VirtualizedContainerService.HintSize="388,233" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NTakeScreenshot.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/orderdetails/1032" DesignTimeRectangle="8, 124, 1903, 2001" DesignTimeScaleFactor="1" FriendlyName="'US DollarEuroMy'" FullSelectorArgument="&lt;webctrl class='master-wrapper-page' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='master-wrapper-page' tag='DIV' type='' aaname='' check:innerText='US Dollar&amp;#xD;&amp;#xA;Euro&amp;#xD;&amp;#xA;My accountLog outWishlist (0)Shopping cart (0)&amp;#xD;&amp;#xA;&amp;#x9;&amp;#xD;&amp;#xA;SEARCH&amp;#xD;&amp;#xA;Computers&amp;#xD;&amp;#xA;Electronics' /&gt;" Guid="ea915e43-e1f6-4908-af0b-d2d83c731536" ImageBase64="" InformativeScreenshot="d96e79ad034d9cc7698d73ec46e0558d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Order Details' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NTakeScreenshot.Target>
+            </uix:NTakeScreenshot>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log out'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/" CvTextArgument="Log out" CvType="Text" DesignTimeRectangle="1264, 79, 40, 45" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Log out'" FullSelectorArgument="&lt;webctrl class='ico-logout' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ico-logout' tag='A' type='' aaname='Log out' check:innerText='Log out' /&gt;" Guid="d1cbfc8c-e23b-4ba2-9eb2-f8168d0e53e5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAxCAYAAAChzEtEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEzSURBVGhD7ZPtDYIwEIbZmiXsFGUMOgX8UwbAJc72uMqBkqDyGmvuSRqgH2+fHlBRYVTny0AltfIqLNdiMGE0JozGhNGYMBoTRmPCaEwYTcnCHfm6Jt/L4y9wDeRqH81m/li491THcW6nQKN053Xc3/h47yhcZWjBSOEk82K777OWSvtwvspV4/uEOTSPycbNFNE18/3Yuhj+XJjn5YPy4WXepnDk7QrrkARvmILSGi24fs5Mh5yzp2fXxkSEMFdOC+cgvu4RfsxOFYcJf7PCi+K8LcwL8xjiG15lvyKc/+KHv5k3kX5dbbXOtWGjwgmRkbm6MNNBU39c2+q3mbNnaSV8APdPBceHwsuqbX0OR3Jshb+ACaMxYTQmjMaE0ZgwGhNGY8JoTBhNNQwDldQKqzDRDaQiuBWj3TvfAAAAAElFTkSuQmCC" InformativeScreenshot="8aac2bffa88ac9e5c73a2ddc248a25dc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGDSURBVDhPxdI/KMRhHMfxc+dEicWVMpBCDI7kTxImkeHoBjopBhaDmSvJ4E8Kg0mxSDEZZJCSP6XzZ1FKBlwxGMwWwvtz9310FoPFU6/7PX9+v+893+f5ev6llcTiafDraVO/N17MRyl8yMUEdjFsr3xHzbRnAUbQhBqc4wmt6ME7PnFqnycCdGIP3ViHXtjEuPVfoID1OMMJQu7jLOzjFX3Yxh3CKMYY2qAUtMMyBOF3AbzoQggZ0GIDNF+LefRCH7fgAg+IugAVWEE/6nCJIyh/vawUbqGzWbNx8gz4SYfLWYsz1r9CM5SKxhvQIQ/hEdeIKIDymsYBtF3tYBHaqlLQM4KA7Vb3X41yeN1EFYqgHLWom8hGADrAORRagA4cQ7cQ1kQUz1hCI+LQPQ9iCi7fSeQgljJ3owD3NljGqPXfMIAtG39Aa6pCFZULcKgAyl8HpFKthEp0Fvq3dqg+FpCXksIOVhHUhG4hWRA0+jppn/VdeSfGrjFWrfyY+2PzeL4ANS6fc8VrUkgAAAAASUVORK5CYII=" InformativeScreenshot="8860eaa06ff707591c2f7f22c696ef4f.jpg" Selector="&lt;html app='chrome.exe' title='nopCommerce demo store' /&gt;" Title="nopCommerce demo store" Url="https://demo.nopcommerce.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

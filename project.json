@@ -1,0 +1,91 @@
+{
+  "name": "TestAutomationProject",
+  "projectId": "3e1a9963-3d88-4acb-bff6-8e2a6d2fea2a",
+  "description": "Test Automation Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.System.Activities": "[23.6.0-preview]",
+    "UiPath.Testing.Activities": "[23.6.0-preview]",
+    "UiPath.UIAutomation.Activities": "[23.6.2-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.6.1.0",
+  "projectVersion": "1.0.144068441",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": [
+        "Sequence.xaml"
+      ]
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a99b0e28-137f-4126-b4f3-3cb9537470c8",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\TC1_E2ETest.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e412e93b-2371-4de1-a0c7-ebec58e2a17b",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\TC1_E2ETest_Passed_orig.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f898f9fa-199e-448c-b506-c58c81a4daeb",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\TC1_E2ETest_Login.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "116a86a8-ecb2-4ed0-be24-85e92eed32ca",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\TC1_E2ETest_Register.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fe02fabc-83e8-4da0-8525-a5ade0faaafb",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\TC1_E2ETest_CartCheckout.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e39b53d2-5394-4929-b740-462152adb619",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\TC1_E2ETest_AssignValue.xaml"
+      }
+    ],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
