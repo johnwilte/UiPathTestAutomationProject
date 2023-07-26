@@ -72,6 +72,21 @@ pipeline {
 	                echo 'Deploy to Production'
 	                }
 	            }
+			// Post Build
+	        stage('Post Build') {
+	            steps {
+				  UiPathTest (
+						  testTarget: [$class: 'TestSetEntry', testSet: "Test Set for Hands On"],
+						  orchestratorAddress: "${UIPATH_ORCH_URL}",
+						  orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
+						  folderName: "${UIPATH_ORCH_FOLDER_NAME}",
+						  timeout: "10000",
+						  traceLoggingLevel: 'None',
+						  testResultsOutputPath: "result.xml",
+						  credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "APIUserKey"]
+						)
+	                }
+	            }
 	    }
 	
 
