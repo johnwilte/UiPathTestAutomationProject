@@ -35,7 +35,8 @@ pipeline {
 	                UiPathPack (
                       outputPath: "Output\\${env.BUILD_NUMBER}",
                       projectJsonPath: "project.json",
-                      version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
+                      //version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
+					  version: [$class: 'ManualVersionEntry', version: AutoVersion()],
                       useOrchestrator: false,
 					  traceLevel: 'None'
 					)
@@ -70,23 +71,6 @@ pipeline {
 	        stage('Deploy to Production') {
 	            steps {
 	                echo 'Deploy to Production'
-	                }
-	            }
-				
-			// Test Run
-	         stage('Test Run') {
-	           steps {
-				  UiPathTest (
-						  testTarget: [$class: 'TestSetEntry', testSet: "Test Set for Hands On"],
-						  orchestratorAddress: "${UIPATH_ORCH_URL}",
-						  orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
-						  folderName: "${UIPATH_ORCH_FOLDER_NAME}",
-						  traceLevel: 'None',
-						  timeout(time:80, unit:'MINUTES'),
-						  testResultsOutputPath: "result.xml",
-						  //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "APIUserKey"]
-						  credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey'), 
-						)
 	                }
 	            }
 	    }
