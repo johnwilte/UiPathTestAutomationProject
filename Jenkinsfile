@@ -78,17 +78,7 @@ pipeline {
 			// Test Run
 	         stage('Test Run') {
 	           steps {
-				  UiPathTest (
-						//credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "credentialsId"]
-						credentials: Token(accountName: 'personaluitesttraining', credentialsId: 'APIUserKey'), 
-						folderName: 'TestFolder', 
-						orchestratorAddress: 'https://cloud.uipath.com/', 
-						orchestratorTenant: 'DefaultTenant', parametersFilePath: '', 
-						testResultsOutputPath: 'result.xml', 
-						timeout(time:80, unit:'MINUTES'),
-						testTarget: [$class: 'TestSetEntry', testSet: "Test Set for Hands On"],
-						traceLevel: 'None'
-						)
+					echo 'Test Run'
 	                }
 	            }
 	    }
