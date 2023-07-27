@@ -133,7 +133,7 @@
         <InArgument x:TypeArguments="x:String">123456</InArgument>
       </Assign.Value>
     </Assign>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: nopCommerce demo store" sap:VirtualizedContainerService.HintSize="484,12344" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: nopCommerce demo store" sap:VirtualizedContainerService.HintSize="484,12344" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
