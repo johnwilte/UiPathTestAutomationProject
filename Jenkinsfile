@@ -61,7 +61,7 @@ pipeline {
 						//credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
 						credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey'), 
 						traceLevel: 'None',
-						entryPointPaths: 'main.xaml'
+						entryPointPaths: 'Main.xaml'
 					)
 				}
 			}
@@ -72,6 +72,26 @@ pipeline {
 	                echo 'Deploy to Production'
 	                }
 	            }
+			
+			// Test Run	
+			stage('Test Run'){
+				steps {
+					echo "Test Run"
+					UiPathTest credentials: Token(accountName: 'personaluitesttraining', 
+						credentialsId: 'APIUserKey'), 
+						folderName: 'TestFolder', 
+						orchestratorAddress: 'https://cloud.uipath.com/', 
+						orchestratorTenant: 'DefaultTenant', 
+						parametersFilePath: '', 
+						testResultsOutputPath: '', 
+						testTarget: TestSet('Test Set for Hands On'), 
+						traceLevel: 'None'
+				}
+			}
+				
+				
+
+				
 			// Post Build
 	        // stage('Post Build') {
 	        //   steps {
