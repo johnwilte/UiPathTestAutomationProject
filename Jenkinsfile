@@ -84,7 +84,8 @@ pipeline {
 						  traceLevel: 'None',
 						  timeout(time:80, unit:'MINUTES'),
 						  testResultsOutputPath: "result.xml",
-						  credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "APIUserKey"]
+						  //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "APIUserKey"]
+						  credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey'), 
 						)
 	                }
 	            }
