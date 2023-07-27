@@ -1,7 +1,7 @@
 pipeline {
  agent any
 
-    	        // Environment Variables
+    	    // Environment Variables
 	        environment {
 	        MAJOR = '1'
 	        MINOR = '0'
@@ -38,7 +38,8 @@ pipeline {
                       //version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
 					  version: AutoVersion(),
                       useOrchestrator: false,
-					  traceLevel: 'None'
+					  traceLevel: 'None',
+					  runWorkflowAnalysis: true
 					)
 	            }
 	        }
@@ -78,13 +79,14 @@ pipeline {
 	         stage('Test Run') {
 	           steps {
 				  UiPathTest (
+						//credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "credentialsId"]
 						credentials: Token(accountName: 'personaluitesttraining', credentialsId: 'APIUserKey'), 
 						folderName: 'TestFolder', 
 						orchestratorAddress: 'https://cloud.uipath.com/', 
 						orchestratorTenant: 'DefaultTenant', parametersFilePath: '', 
-						testResultsOutputPath: '', 
+						testResultsOutputPath: 'result.xml', 
 						timeout(time:80, unit:'MINUTES'),
-						testTarget: TestProject(environments: '', testProjectPath: 'project.json'), 
+						testTarget: [$class: 'TestSetEntry', testSet: "Test Set for Hands On"],
 						traceLevel: 'None'
 						)
 	                }
