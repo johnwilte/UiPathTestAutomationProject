@@ -73,7 +73,21 @@ pipeline {
 	                echo 'Deploy to Production'
 	                }
 	            }
-
+				
+			// Test Run
+	         stage('Test Run') {
+	           steps {
+				  UiPathTest (
+						credentials: Token(accountName: 'personaluitesttraining', credentialsId: 'APIUserKey'), 
+						folderName: 'TestFolder', 
+						orchestratorAddress: 'https://cloud.uipath.com/', 
+						orchestratorTenant: 'DefaultTenant', parametersFilePath: '', 
+						testResultsOutputPath: '', 
+						testTarget: TestProject(environments: '', testProjectPath: 'project.json'), 
+						traceLevel: 'None'
+						)
+	                }
+	            }
 	    }
 	
 
