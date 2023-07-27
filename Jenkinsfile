@@ -36,7 +36,7 @@ pipeline {
                       outputPath: "Output\\${env.BUILD_NUMBER}",
                       projectJsonPath: "project.json",
                       //version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
-					  version: [$class: 'ManualVersionEntry', version: AutoVersion()],
+					  version: AutoVersion(),
                       useOrchestrator: false,
 					  traceLevel: 'None'
 					)
@@ -73,6 +73,7 @@ pipeline {
 	                echo 'Deploy to Production'
 	                }
 	            }
+
 	    }
 	
 
