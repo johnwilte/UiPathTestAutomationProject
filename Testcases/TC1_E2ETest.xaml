@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1244,12787" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1244,12883" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -98,7 +98,7 @@
       <AssemblyReference>UiPath.Testing</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="546,12722" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="546,12818" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Username" />
       <Variable x:TypeArguments="x:String" Name="Password" />
@@ -133,13 +133,13 @@
         <InArgument x:TypeArguments="x:String">123456</InArgument>
       </Assign.Value>
     </Assign>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: nopCommerce demo store" sap:VirtualizedContainerService.HintSize="484,12248" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: nopCommerce demo store" sap:VirtualizedContainerService.HintSize="484,12344" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,12031" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,12127" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="result_message" />
               <Variable x:TypeArguments="x:String" Name="ProductPrice" />
@@ -741,6 +741,7 @@
                 <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/orderdetails/1032" DesignTimeRectangle="8, 124, 1903, 2001" DesignTimeScaleFactor="1" FriendlyName="'US DollarEuroMy'" FullSelectorArgument="&lt;webctrl class='master-wrapper-page' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='master-wrapper-page' tag='DIV' type='' aaname='' check:innerText='US Dollar&amp;#xD;&amp;#xA;Euro&amp;#xD;&amp;#xA;My accountLog outWishlist (0)Shopping cart (0)&amp;#xD;&amp;#xA;&amp;#x9;&amp;#xD;&amp;#xA;SEARCH&amp;#xD;&amp;#xA;Computers&amp;#xD;&amp;#xA;Electronics' /&gt;" Guid="ea915e43-e1f6-4908-af0b-d2d83c731536" ImageBase64="" InformativeScreenshot="d96e79ad034d9cc7698d73ec46e0558d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Order Details' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
               </uix:NTakeScreenshot.Target>
             </uix:NTakeScreenshot>
+            <ui:Comment sap:VirtualizedContainerService.HintSize="388,56" sap2010:WorkflowViewState.IdRef="Comment_5" Text="Logout and close Page" />
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log out'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41f36720-d0fb-444c-8c9f-e98ecc60b7d5" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://demo.nopcommerce.com/cart" CvTextArgument="Log out" CvType="Text" DesignTimeRectangle="1264, 79, 40, 45" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Log out'" FullSelectorArgument="&lt;webctrl class='ico-logout' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ico-logout' tag='A' type='' aaname='Log out' check:innerText='Log out' /&gt;" Guid="71632195-1d04-403e-bc89-b2d232548333" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAxCAYAAAChzEtEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEzSURBVGhD7ZPtDYIwEIbZmiXsFGUMOgX8UwbAJc72uMqBkqDyGmvuSRqgH2+fHlBRYVTny0AltfIqLNdiMGE0JozGhNGYMBoTRmPCaEwYTcnCHfm6Jt/L4y9wDeRqH81m/li491THcW6nQKN053Xc3/h47yhcZWjBSOEk82K777OWSvtwvspV4/uEOTSPycbNFNE18/3Yuhj+XJjn5YPy4WXepnDk7QrrkARvmILSGi24fs5Mh5yzp2fXxkSEMFdOC+cgvu4RfsxOFYcJf7PCi+K8LcwL8xjiG15lvyKc/+KHv5k3kX5dbbXOtWGjwgmRkbm6MNNBU39c2+q3mbNnaSV8APdPBceHwsuqbX0OR3Jshb+ACaMxYTQmjMaE0ZgwGhNGY8JoTBhNNQwDldQKqzDRDaQiuBWj3TvfAAAAAElFTkSuQmCC" InformativeScreenshot="62be20d9f7a1fe9f38fa2bb18ed00d93.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='nopCommerce demo store. Shopping Cart' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
