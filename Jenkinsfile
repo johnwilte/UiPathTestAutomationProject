@@ -72,41 +72,22 @@ pipeline {
 	                echo 'Deploy to Production'
 	                }
 	            }
-			
-			// Test Run	
-			stage('Test Run'){
-				steps {
-					echo "Test Run"
-					UiPathTest credentials: Token(accountName: 'personaluitesttraining', 
-						credentialsId: 'APIUserKey'), 
-						folderName: 'TestFolder', 
-						orchestratorAddress: 'https://cloud.uipath.com/', 
-						orchestratorTenant: 'DefaultTenant', 
-						parametersFilePath: '', 
-						testResultsOutputPath: '', 
-						testTarget: TestSet('Test Set for Hands On'), 
-						traceLevel: 'None'
-				}
-			}
 				
-				
-
-				
-			// Post Build
-	        // stage('Post Build') {
-	        //   steps {
-			//	  UiPathTest (
-			//			  testTarget: [$class: 'TestSetEntry', testSet: "Test Set for Hands On"],
-			//			  orchestratorAddress: "${UIPATH_ORCH_URL}",
-			//			  orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
-			//			  folderName: "${UIPATH_ORCH_FOLDER_NAME}",
-			//			  traceLevel: 'None',
-			//			  timeout(time:80, unit:'MINUTES'),
-			//			  testResultsOutputPath: "result.xml",
-			//			  credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "APIUserKey"]
-			//			)
-	        //        }
-	        //    }
+			// Test Run
+	         stage('Test Run') {
+	           steps {
+				  UiPathTest (
+						  testTarget: [$class: 'TestSetEntry', testSet: "Test Set for Hands On"],
+						  orchestratorAddress: "${UIPATH_ORCH_URL}",
+						  orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
+						  folderName: "${UIPATH_ORCH_FOLDER_NAME}",
+						  traceLevel: 'None',
+						  timeout(time:80, unit:'MINUTES'),
+						  testResultsOutputPath: "result.xml",
+						  credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "APIUserKey"]
+						)
+	                }
+	            }
 	    }
 	
 
