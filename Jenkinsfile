@@ -83,6 +83,7 @@ pipeline {
 						orchestratorAddress: 'https://cloud.uipath.com/', 
 						orchestratorTenant: 'DefaultTenant', parametersFilePath: '', 
 						testResultsOutputPath: '', 
+						timeout(time:80, unit:'MINUTES'),
 						testTarget: TestProject(environments: '', testProjectPath: 'project.json'), 
 						traceLevel: 'None'
 						)
