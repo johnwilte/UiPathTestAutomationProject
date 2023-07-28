@@ -79,6 +79,13 @@
         "testCaseId": "e39b53d2-5394-4929-b740-462152adb619",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC1_E2ETest_AssignValue.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "8459377c-7b59-42d6-ad3b-00dca71dca3e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Testcases\\TestCase.xaml"
       }
     ],
     "modernBehavior": true
