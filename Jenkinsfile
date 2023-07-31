@@ -31,12 +31,12 @@ pipeline {
 	         // Build Stages
 	        stage('Build') {
 	            steps {
-	                echo "Building..with ${WORKSPACE}"
+	                echo "Building.. with ${WORKSPACE}"
 	                UiPathPack (
                       outputPath: "Output\\${env.BUILD_NUMBER}",
                       projectJsonPath: "project.json",
-                      version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
-					  //version: AutoVersion(),
+                      //version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
+					  version: AutoVersion(),
                       useOrchestrator: false,
 					  traceLevel: 'None'
 					//  runWorkflowAnalysis: true
@@ -46,7 +46,7 @@ pipeline {
 	         // Test Stages
 	        stage('Test') {
 	            steps {
-	                echo 'Testing..the workflow...'
+	                echo 'Testing.. the workflow...'
 	            }
 	        }
 	         // Deploy Stages
