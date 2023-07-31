@@ -79,6 +79,16 @@ pipeline {
 	         stage('Test Run') {
 	           steps {
 					echo 'Running Test'
+					        UiPathTest (
+							  testTarget: [$class: 'TestSetEntry', testSet: "Test Set for Hands On""],
+							  orchestratorAddress: "https://cloud.uipath.com/",
+							  orchestratorTenant: "DefaultTenant",
+							  folderName: "TestFolder",
+							  timeout: "10000",
+							  traceLoggingLevel: 'None',
+							  testResultsOutputPath: "result.xml",
+							  credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "8DEv1AMNXczW3y4U15LL3jYf62jK93n5"]
+        )
 	                }
 	            }
 	    }
