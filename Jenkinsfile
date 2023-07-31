@@ -38,8 +38,8 @@ pipeline {
                       version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
 					  //version: AutoVersion(),
                       useOrchestrator: false,
-					  traceLevel: 'None',
-					  runWorkflowAnalysis: true
+					  traceLevel: 'None'
+					//  runWorkflowAnalysis: true
 					)
 	            }
 	        }
