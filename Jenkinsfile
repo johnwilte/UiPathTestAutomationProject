@@ -87,7 +87,8 @@ pipeline {
 					  timeout: 10000,
 					  traceLevel: 'None',
 					  testResultsOutputPath: "result.xml",
-					  credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "8DEv1AMNXczW3y4U15LL3jYf62jK93n5"]
+					  credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "8DEv1AMNXczW3y4U15LL3jYf62jK93n5"],
+					  parametersFilePath: ''
 					)
 	                }
 	            }
