@@ -12,7 +12,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.6.1.0",
-  "projectVersion": "1.0.144169222",
+  "projectVersion": "1.0.144506459",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -85,7 +85,7 @@
         "testCaseId": "8459377c-7b59-42d6-ad3b-00dca71dca3e",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "Testcases\\TestCase.xaml"
+        "fileName": "Testcases\\TC2_BrowseGooglePage.xaml"
       }
     ],
     "modernBehavior": true
