@@ -84,8 +84,8 @@ pipeline {
 					  orchestratorAddress: "https://cloud.uipath.com/",
 					  orchestratorTenant: "DefaultTenant",
 					  folderName: "TestFolder",
-					  timeout: "10000",
-					  traceLoggingLevel: 'None',
+					  timeout: 10000,
+					  traceLevel: 'None',
 					  testResultsOutputPath: "result.xml",
 					  credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "8DEv1AMNXczW3y4U15LL3jYf62jK93n5"]
 					)
