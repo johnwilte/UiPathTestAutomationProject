@@ -39,7 +39,7 @@ pipeline {
 					  //version: AutoVersion(),
                       useOrchestrator: false,
 					  traceLevel: 'None',
-					//  runWorkflowAnalysis: true
+					  runWorkflowAnalysis: true
 					)
 	            }
 	        }
